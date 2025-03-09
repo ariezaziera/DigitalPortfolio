@@ -33,21 +33,26 @@ const HeroSection = () => {
         </p>
 
         <div className="mt-6 flex gap-4">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-lg hover:bg-purple-700 transition"
-          >
-            My Projects
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-6 py-3 border border-purple-400 text-white font-semibold rounded-lg hover:bg-purple-700 transition"
-          >
-            Contact Me
-          </motion.button>
+          <a href="#projects">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-lg hover:bg-purple-700 transition"
+            >
+              My Projects
+            </motion.button>
+          </a>
+          <a href="#contact">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 border border-purple-400 text-white font-semibold rounded-lg hover:bg-purple-700 transition"
+            >
+              Contact Me
+            </motion.button>
+          </a>
         </div>
+
         {/* Floating Profile Image with Background Glow */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
