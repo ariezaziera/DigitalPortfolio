@@ -159,70 +159,24 @@ const ProjectsSection: React.FC = () => {
 
               <h3 className="text-xl text-start font-semibold mt-4 text-gray-200">{project.title}</h3>
               <p className="text-gray-100 mt-2 text-start">{project.description}</p>
+
+              {/* ✅ Keywords with Color Mapping */}
+              <div className="flex flex-wrap gap-2 mt-2">
+                {project.keywords.map((keyword: string, index: number) => (
+                  <span 
+                    key={index} 
+                    className={`text-white text-xs px-3 py-2 rounded-full ${
+                      keywordColors[keyword] || "bg-gray-600"
+                    }`}
+                  >
+                    {keyword}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </motion.div>
       </div>
-
-      {/* ✅ Full-Screen Expanded Project View */}
-      <AnimatePresence>
-        {expandedProject && (
-          <motion.div 
-            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setExpandedProject(null)} // Close on background click
-          >
-            <motion.div 
-              className="bg-gray-900 text-white p-6 rounded-lg shadow-lg max-w-3xl w-full relative"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
-              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
-            >
-              <button 
-                className="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl"
-                onClick={() => setExpandedProject(null)}
-              >
-                ✖
-              </button>
-
-              <h2 className="text-3xl font-bold mb-4">{expandedProject.title}</h2>
-              <p className="text-gray-300">{expandedProject.details}</p>
-
-              {/* ✅ Embedded YouTube Video if available */}
-              {expandedProject.youtube && (
-                <div className="mt-4">
-                  <iframe 
-                    width="100%" 
-                    height="250" 
-                    src={expandedProject.youtube} 
-                    title="YouTube video player"
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen 
-                    className="rounded-lg shadow-lg"
-                  ></iframe>
-                </div>
-              )}
-
-              {/* ✅ Website Link */}
-              {expandedProject.website && (
-                <div className="mt-4">
-                  <a 
-                    href={expandedProject.website} 
-                    target="_blank" 
-                    className="text-blue-400 hover:underline text-lg"
-                  >
-                    Visit Website
-                  </a>
-                </div>
-              )}
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   );
 };
