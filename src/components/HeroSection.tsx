@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <motion.section
-      className="relative flex flex-col items-center justify-center min-h-screen text-center text-white px-6"
+      className="relative flex flex-col items-center py-20 justify-center min-h-[80vh] lg:min-h-[60vh] text-center text-white px-6"
       style={{ backgroundImage: "url('/bg.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
