@@ -23,7 +23,7 @@ const HeroSection = () => {
         className="relative flex flex-col items-center"
       >
         <h1 className="text-5xl md:text-7xl font-bold">
-          I'm <span className="text-purple-400">Arieza Aziera</span>
+        I&apos;m <span className="text-purple-400">Arieza Aziera</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-300 mt-3">
           Full Stack Developer

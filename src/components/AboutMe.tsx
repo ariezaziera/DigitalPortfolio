@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
 
 const AboutMe = () => {
     return (
@@ -10,7 +8,7 @@ const AboutMe = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            I'm a passionate <span className="text-purple-300">Multimedia & Full Stack Developer</span> with a strong foundation in design, development, and problem-solving. 
+            I&apos;m a passionate <span className="text-purple-300">Multimedia & Full Stack Developer</span> with a strong foundation in design, development, and problem-solving. 
             Currently completing my studies, I have gained valuable experience during my internship at 
             <span className="text-purple-300"> Prepaid Technologies Sdn Bhd</span>, where I worked on various projects including order calculator automation and digital content creation.
           </p>

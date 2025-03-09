@@ -1,6 +1,5 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
 import { Montserrat } from "next/font/google";
 
 const montSans = Montserrat({
