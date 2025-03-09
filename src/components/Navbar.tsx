@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <nav 
-      className="fixed top-0 left-0 w-full bg-[#0E0D0E] text-white py-4 px-6 z-50 shadow-md"
+    className="fixed top-0 left-0 w-full bg-[#0E0D0E] text-white py-3 md:py-4 px-4 md:px-6 z-50 shadow-md"
     >
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}

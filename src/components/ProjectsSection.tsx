@@ -116,28 +116,30 @@ const ProjectsSection: React.FC = () => {
         <h2 className="text-4xl font-bold">My Projects</h2>
 
         {/* Filter Buttons */}
-        <div className="flex justify-center gap-4 mt-6">
+        <div className="flex overflow-x-auto gap-2 md:gap-4 mt-6 px-4 no-scrollbar">
           {categories.map((category) => (
             <button
-              key={category}
-              className={`px-6 py-2 rounded-full text-white font-semibold transition ${
-                selectedCategory === category ? "bg-purple-600 shadow-md" : "bg-gray-700 hover:bg-purple-500"
-              }`}
-              onClick={() => setSelectedCategory(category)}
+                key={category}
+                className={`px-6 py-2 rounded-full text-white font-semibold transition ${
+                selectedCategory === category 
+                    ? "bg-purple-600 shadow-md scale-105"  // Active state
+                    : "bg-gray-700 hover:bg-purple-500"
+                }`}
+                onClick={() => setSelectedCategory(category)}
             >
-              {category}
+                {category}
             </button>
           ))}
         </div>
 
         {/* Project Grid */}
         <motion.div 
-          key={selectedCategory} 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
-          transition={{ duration: 0.5 }} 
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10"
-        >
+            key={selectedCategory} 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ duration: 0.5 }} 
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10"
+            >
           {(selectedCategory === "All Projects" ? allProjects : allProjectsData[selectedCategory]).map((project) => (
             <motion.div 
               key={project.id} 

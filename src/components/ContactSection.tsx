@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa"; // Import new icons
+import { FaXTwitter } from "react-icons/fa6";  // ✅ This is the correct import
 
 const ContactSection = () => {
   return (
@@ -47,7 +48,7 @@ const ContactSection = () => {
           </motion.a>
 
           <motion.a 
-            href="https://github.com" 
+            href="https://github.com/ariezaziera" 
             target="_blank" 
             className="text-purple-400 hover:text-purple-600 transition duration-300"
             whileHover={{ scale: 1.2, color: "#a855f7" }}
@@ -61,7 +62,7 @@ const ContactSection = () => {
             className="text-purple-400 hover:text-purple-600 transition duration-300"
             whileHover={{ scale: 1.2, color: "#a855f7" }}
           >
-            <FaTwitter size={30} />
+            <FaXTwitter size={30} />
           </motion.a>
 
           <motion.a 
