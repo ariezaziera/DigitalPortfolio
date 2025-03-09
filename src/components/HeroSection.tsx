@@ -14,13 +14,13 @@ const HeroSection = () => {
       transition={{ duration: 1 }}
     >
       {/* Black Overlay */}
-      <div className="absolute inset-0" style={{ backgroundColor: "rgba(14, 13, 14, 0.9)" }}></div>
+      <div className="absolute inset-0 pt-20" style={{ backgroundColor: "rgba(14, 13, 14, 0.9)" }}></div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative flex flex-col items-center"
+        className="relative flex flex-col items-center pt-25"
       >
         <h1 className="text-5xl md:text-7xl font-bold">
         I&apos;m <span className="text-purple-400">Arieza Aziera</span>
