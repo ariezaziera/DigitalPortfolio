@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutMe = () => {
     return (
-      <section id="about" className="py-20 px-30 mt-20 md:px-12 lg:px-32 text-white" style={{ backgroundColor: "rgba(14, 13, 14, 1)" }}>
+      <section id="about" className="py-20 px-10 md:px-12 lg:px-32 xs:px-5 text-white" style={{ backgroundColor: "rgba(14, 13, 14, 1)" }}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
