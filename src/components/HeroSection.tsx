@@ -56,9 +56,9 @@ const HeroSection = () => {
         {/* Floating Profile Image with Background Glow */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
+          animate={{ scale: 1.5, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative w-52 h-52 mt-10"
+          className="relative w-52 h-52 mt-20 mb-10"
         >
           {/* Soft Glow Effect */}
           <motion.div
@@ -75,8 +75,8 @@ const HeroSection = () => {
             <Image
               src="/profile1.png"
               alt="Profile Picture"
-              width={208}
-              height={208}
+              width={350}
+              height={350}
               className="object-cover rounded-full shadow-lg"
             />
           </motion.div>
