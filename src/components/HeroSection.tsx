@@ -56,9 +56,9 @@ const HeroSection = () => {
         {/* Floating Profile Image with Background Glow */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1.5, opacity: 1 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative w-52 h-52 mt-20 mb-10"
+          className="relative w-100 h-100 mt-10"
         >
           {/* Soft Glow Effect */}
           <motion.div
