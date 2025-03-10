@@ -132,7 +132,7 @@ const ResumeSection = () => {
                 <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                 {/* 🟢 Mobile-Friendly Layout */}
-                <div className="flex flex-col md:flex-row  md:items-start gap-2">
+                <div className="flex flex-col md:flex-row  md:items-center gap-2">
                   {/* Logo */}
                   <div className="h-12 flex-shrink-0 flex items-center">
                     <Image
