@@ -58,7 +58,7 @@ const HeroSection = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative w-100 h-100 mt-10"
+          className="relative w-50 h-50 mt-10"
         >
           {/* Soft Glow Effect */}
           <motion.div
