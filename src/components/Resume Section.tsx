@@ -8,9 +8,9 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiFigma, SiFramer,
 // ✅ Experiences Data
 const experiences = [
   {
-    role: "Business Analyst",
-    company: "Cinergi",
-    duration: "2025 - Present",
+    role: "Multimedia Intern",
+    company: "Prepaid Technologies Sdn Bhd",
+    duration: "Oct 2024 - Mar 2025",
     logo: "/logoUTeM.png",
     description: "lorem ipsum",
   },
@@ -132,9 +132,9 @@ const ResumeSection = () => {
                 <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                 {/* 🟢 Mobile-Friendly Layout */}
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+                <div className="flex flex-col md:flex-row  md:items-start gap-2">
                   {/* Logo */}
-                  <div className="w-12 h-12 flex-shrink-0 flex items-center">
+                  <div className="h-12 flex-shrink-0 flex items-center">
                     <Image
                       src={exp.logo}
                       alt={`${exp.company} Logo`}
@@ -145,15 +145,15 @@ const ResumeSection = () => {
                   </div>
 
                   {/* Details */}
-                  <div className="text-center md:text-left">
+                  <div className="md:text-start">
                     <h4 className="text-lg font-bold text-white flex items-center gap-2">
                       {exp.role} <FaUserTie className="text-gray-400" />
                     </h4>
-                    <p className="text-gray-400">{exp.company}</p>
+                    <p className="text-gray-400 text-start">{exp.company}</p>
                     <p className="text-gray-500 text-sm flex items-center gap-2">
                       <FaCalendarAlt className="text-gray-400" /> {exp.duration}
                     </p>
-                    <p className="mt-3 text-gray-400 text-sm leading-relaxed">{exp.description}</p>
+                    <p className="mt-3 text-gray-400 text-start text-sm leading-relaxed">{exp.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -184,9 +184,9 @@ const ResumeSection = () => {
                 <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                 {/* 🟢 Mobile-Friendly Layout */}
-                <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-2">
                   {/* Logo */}
-                  <div className="w-12 h-12 flex-shrink-0 flex items-center">
+                  <div className="h-12 flex-shrink-0 flex items-center">
                     <Image
                       src={edu.logo}
                       alt={`${edu.institution} Logo`}
@@ -197,10 +197,10 @@ const ResumeSection = () => {
                   </div>
 
                   {/* Details */}
-                  <div className="text-center md:text-left">
-                    <h4 className="text-lg font-bold text-white">{edu.degree}</h4>
-                    <p className="text-gray-400">{edu.institution}</p>
-                    <p className="text-gray-500 text-sm">{edu.duration}</p>
+                  <div className="md:text-start">
+                    <h4 className="text-lg text-start font-bold text-white flex items-center gap-2">{edu.degree}</h4>
+                    <p className="text-gray-400 text-start">{edu.institution}</p>
+                    <p className="text-gray-500 text-sm flex items-center gap-2">{edu.duration}</p>
                   </div>
                 </div>
               </motion.div>
