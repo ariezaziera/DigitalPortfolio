@@ -236,8 +236,8 @@ const ResumeSection = () => {
                     <motion.div
                       key={skillIndex}
                       whileHover={{ scale: 1.1, rotate: 2, boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.4)" }}
-                      className="flex flex-col items-center text-white text-sm font-semibold bg-gray-800 p-4 rounded-lg shadow-lg w-40"
-                    >
+                      className="flex flex-col items-center text-white text-xs sm:text-sm font-semibold bg-gray-800 p-3 sm:p-4 rounded-lg shadow-lg w-32 sm:w-40"
+                      >
                       <motion.div className="text-3xl">{skill.icon}</motion.div>
                       <span className="mt-2">{skill.name}</span>
 
