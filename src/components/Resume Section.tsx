@@ -101,7 +101,7 @@ const ResumeSection = () => {
         {/* Main Button */}
         <a
           href="/resume.pdf"
-          download="resume.pdf"
+          download="Arieza_Aziera_Resume.pdf"
           className="relative z-10 flex items-center gap-3 px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg shadow-lg transition-all group-hover:bg-purple-700"
         >
           <FaDownload className="text-xl animate-bounce" />
