@@ -16,22 +16,29 @@ const HeroSection = () => {
       {/* Black Overlay */}
       <div className="absolute inset-0 pt-20" style={{ backgroundColor: "rgba(14, 13, 14, 0.9)" }}></div>
 
+      {/* Main Content */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         className="relative flex flex-col items-center pt-25"
       >
+        {/* Title */}
         <h1 className="text-5xl md:text-7xl font-bold">
-        I&apos;m <span className="text-purple-400">Arieza Aziera</span>
+          I&apos;m <span className="text-purple-400">Arieza Aziera</span>
         </h1>
+
+        {/* Subtitle */}
         <h2 className="text-2xl md:text-3xl text-gray-300 mt-3">
           Full Stack Developer
         </h2>
+
+        {/* Description */}
         <p className="text-gray-400 max-w-xl mt-4">
           Passionate about building interactive and scalable web applications.
         </p>
 
+        {/* Buttons */}
         <div className="mt-6 flex gap-4">
           <a href="#projects">
             <motion.button
