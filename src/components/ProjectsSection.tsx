@@ -143,26 +143,51 @@ const ProjectsSection: React.FC = () => {
             >
           {(selectedCategory === "All Projects" ? allProjects : allProjectsData[selectedCategory]).map((project) => (
             <motion.div 
-              key={project.id} 
-              className="relative p-6 rounded-lg cursor-pointer transition-all duration-500 bg-gray-800"
-              style={{ boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.5)" }}
-              whileHover={{ boxShadow: "0px 0px 10px rgba(255, 255, 255, 1)", scale: 1.05 }}
-              onClick={() => setExpandedProject(project)}
+            key={project.id} 
+            className="relative p-6 rounded-lg cursor-pointer transition-all duration-500 bg-gray-800"
+            initial={{ boxShadow: "0px 0px 5px rgba(255, 255, 255, 0.2)" }}
+            whileHover={{ boxShadow: "0px 0px 15px rgba(255, 255, 255, 0.8)", scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => setExpandedProject(project)}
+          >
+            {/* Image */}
+            <div className="relative w-full h-48 overflow-hidden rounded-lg">
+              <Image
+                src={project.image}
+                alt={`Preview of ${project.title}`}
+                layout="responsive"
+                width={300}
+                height={200}
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
+          
+            <h3 className="text-xl text-start font-semibold mt-4 text-gray-200">{project.title}</h3>
+            
+            <motion.p 
+              className="text-gray-100 mt-2 text-start"
+              initial={{ opacity: 0.6 }}
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
             >
-              {/* Image */}
-              <div className="relative w-full h-48 overflow-hidden rounded-lg">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-              </div>
-
-              <h3 className="text-xl text-start font-semibold mt-4 text-gray-200">{project.title}</h3>
-              <p className="text-gray-100 mt-2 text-start">{project.description}</p>
-            </motion.div>
+              {project.description}
+            </motion.p>
+          
+            {/* Keyword Badges */}
+            <div className="flex flex-wrap mt-4 gap-2">
+              {project.keywords.map((keyword) => (
+                <span 
+                  key={keyword} 
+                  className={`px-3 py-1 text-sm font-semibold text-white rounded-full transition-all duration-300 ${
+                    keywordColors[keyword] || "bg-gray-600"
+                  } hover:scale-105 hover:shadow-md`}
+                >
+                  {keyword}
+                </span>
+              ))}
+            </div>
+          </motion.div>          
           ))}
         </motion.div>
       </div>

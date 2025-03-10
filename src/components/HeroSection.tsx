@@ -58,25 +58,26 @@ const HeroSection = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="relative w-50 h-50 mt-10"
+          className="flex justify-center items-center mt-10 relative w-full"
         >
           {/* Soft Glow Effect */}
           <motion.div
             animate={{ opacity: [0.4, 0.8, 0.4] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="absolute inset-0 w-full h-full bg-white opacity-50 blur-3xl rounded-full"
+            className="absolute w-[350px] h-[350px] bg-white opacity-50 blur-3xl rounded-full"
           ></motion.div>
 
+          {/* Profile Image */}
           <motion.div
-            whileHover={{ scale: 1.05, rotate: 1 }}
+            whileHover={{ scale: 1.1, rotate: 1 }}
             whileTap={{ scale: 0.95 }}
-            className="relative w-full h-full overflow-hidden"
+            className="relative w-[300px] h-[300px] overflow-hidden"
           >
             <Image
               src="/profile1.png"
               alt="Profile Picture"
-              width={350}
-              height={350}
+              width={300}
+              height={300}
               className="object-cover rounded-full shadow-lg"
             />
           </motion.div>
