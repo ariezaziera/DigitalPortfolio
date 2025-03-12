@@ -228,50 +228,56 @@ const ProjectsSection: React.FC = () => {
         >
           {(selectedCategory === "All Projects" ? allProjects : allProjectsData[selectedCategory]).map((project) => (
             <motion.div 
-              key={project.id} 
-              className="relative p-6 rounded-lg cursor-pointer transition-all duration-500 bg-gray-800"
-              initial={{ boxShadow: "0px 0px 5px rgba(255, 255, 255, 0.2)" }}
-              whileHover={{ boxShadow: "0px 0px 15px rgba(255, 255, 255, 0.8)", scale: 1.05 }}
+            key={project.id} 
+            className="relative p-6 rounded-lg cursor-pointer transition-all duration-500 bg-gray-800 flex flex-col h-full"
+            initial={{ boxShadow: "0px 0px 5px rgba(255, 255, 255, 0.2)" }}
+            whileHover={{ boxShadow: "0px 0px 15px rgba(255, 255, 255, 0.8)", scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => setExpandedProject(project)}
+          >
+          
+            {/* Image Section */}
+            <div className="relative w-full aspect-[5/3] overflow-hidden rounded-lg">
+              <Image
+                src={project.image}
+                alt={`Preview of ${project.title}`}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg"
+              />
+            </div>
+          
+            {/* Project Title */}
+            <h3 className="text-xl text-start font-semibold mt-4 text-gray-200">{project.title}</h3>
+          
+            {/* Description */}
+            <motion.p 
+              className="text-gray-100 mt-2 text-start flex-grow" // Flex-grow pushes the last part to the bottom
+              initial={{ opacity: 0.6 }}
+              whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              onClick={() => setExpandedProject(project)}
             >
-              <div className="relative w-full aspect-[5/3] overflow-hidden rounded-lg">
-                <Image
-                  src={project.image}
-                  alt={`Preview of ${project.title}`}
-                  layout="fill" // Ensures full container coverage
-                  objectFit="cover" // Maintains aspect ratio without stretching
-                  className="rounded-lg"
-                />
-              </div>
-
-              <h3 className="text-xl text-start font-semibold mt-4 text-gray-200">{project.title}</h3>
-              
-              <motion.p 
-                className="text-gray-100 mt-2 text-start"
-                initial={{ opacity: 0.6 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-              >
-                {project.description}
-              </motion.p>
-
-              <p className="my-5 font-semibold underline text-[13px]">Click to expand</p>
-            
-              {/* Keyword Badges */}
-              <div className="flex flex-wrap mt-4 gap-2">
-                {project.keywords.map((keyword) => (
-                  <span 
-                    key={keyword} 
-                    className={`px-3 py-1 text-sm font-semibold text-white rounded-full transition-all duration-300 ${
-                      keywordColors[keyword] || "bg-gray-600"
-                    } hover:scale-105 hover:shadow-md`}
-                  >
-                    {keyword}
-                  </span>
-                ))}
-              </div>
-            </motion.div>          
+              {project.description}
+            </motion.p>
+          
+            {/* Click to Expand Text */}
+            <p className="my-10 font-semibold underline text-[13px]">Click to expand</p>
+          
+            {/* Keyword Badges */}
+            <div className="flex flex-wrap gap-2">
+              {project.keywords.map((keyword) => (
+                <span 
+                  key={keyword} 
+                  className={`px-3 py-1 text-sm font-semibold text-white rounded-full transition-all duration-300 ${
+                    keywordColors[keyword] || "bg-gray-600"
+                  } hover:scale-105 hover:shadow-md`}
+                >
+                  {keyword}
+                </span>
+              ))}
+            </div>
+          
+          </motion.div>                    
           ))}
         </motion.div>
       </div>
