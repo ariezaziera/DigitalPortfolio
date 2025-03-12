@@ -256,7 +256,7 @@ const ProjectsSection: React.FC = () => {
                 {project.description}
               </motion.p>
 
-              <p className="my-5 font-semibold">Click for more</p>
+              <p className="my-5 font-semibold underline text-[13px]">Click for more</p>
             
               {/* Keyword Badges */}
               <div className="flex flex-wrap mt-4 gap-2">
