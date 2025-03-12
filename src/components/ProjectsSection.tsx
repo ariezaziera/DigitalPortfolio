@@ -80,12 +80,12 @@ const allProjectsData: Record<string, Project[]> = {
     { 
       id: 4,
       title: "Warna Warni Keharmonian", 
-      image: "/warna-warni-keharmonian.jpg", 
+      image: "/wwk.jpg", 
       description: "A multimedia project celebrating Malaysia’s rich cultural diversity through visually compelling storytelling, photography, and videography.",
       details: "More details about this project...",
-      youtube: ["https://www.youtube.com/embed/0cinXpffBgY?si=MGZlTXGVNu3o7uDi"],
+      youtube: ["https://www.youtube.com/embed/0cinXpffBgY?si=MGZlTXGVNu3o7uDi", "https://www.youtube.com/embed/AqjiNCVW6rQ?si=p_hA3oi_4pCPpI1M"],
       keywords: ["Videography", "Editing"],
-      images: ["/warna-warni-keharmonian.jpg", "/warna-warni-keharmonian.jpg", "/warna-warni-keharmonian.jpg"]
+      images: ["/wwk.jpg"]
     },
     { 
       id: 5,
@@ -255,6 +255,8 @@ const ProjectsSection: React.FC = () => {
               >
                 {project.description}
               </motion.p>
+
+              <p className="my-5 font-semibold">Click for more</p>
             
               {/* Keyword Badges */}
               <div className="flex flex-wrap mt-4 gap-2">
