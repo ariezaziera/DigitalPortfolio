@@ -40,135 +40,147 @@ const keywordColors: Record<string, string> = {
   "Standalone Application": "bg-gray-800"
 };
 
-// ✅ Define the project categories
+// Define the project categories
 const allProjectsData: Record<string, Project[]> = {
   "Web Development": [
     { 
       id: 1, 
+      title: "SkillForge Academy", 
+      image: "/skillforge.png", 
+      description: "An innovative e-learning platform designed to help users enhance their skills through interactive courses, certifications, and community engagement.",
+      details: "SkillForge Academy is an innovative e-learning platform designed to help users enhance their skills through interactive courses, certifications, and community engagement. Whether you're looking to upskill in coding, design, or business, this platform offers a seamless learning experience with intuitive navigation and progress tracking.",
+      website: "https://webapp.utem.edu.my/student/bitm/b032110154/SkillForge_Academy/",
+      youtube: ["https://www.youtube.com/embed/q2JQ3R-c96A?si=7WsiQ_BMquUxusEm"],
+      keywords: ["PHP", "MySQL", "Bootstrap"],
+      images: ["/skillforge.png", "/skillforge.png", "/skillforge.png"]
+    },
+    { 
+      id: 2, 
+      title: "Personal Portfolio v1", 
+      image: "/Landing page.png", 
+      description: "A personal portfolio showcasing projects, skills, and achievements, built using HTML, CSS, and JavaScript.",
+      details: "More details about this project...",
+      website: "https://ferdexzra.github.io/online-portfolio",
+      youtube: ["https://www.youtube.com/embed/wxSfOrCxsVc?si=LauHaJAEWOPyhWQy"],
+      keywords: ["Videography", "Editing"],
+      images: ["/Landing page.png", "/Landing page.png", "/Landing page.png"]
+    },
+    { 
+      id: 3, 
       title: "Web-Based Order Calculator", 
       image: "/Ord-C.jpg", 
-      description: "A web-based tool for order calculation.",
+      description: "A web-based tool for order calculation, built using HTML, CSS, JavaScript, Firebase Firehost, and Firestore. Designed with Figma.",
       details: "More details about this project...",
       website: "https://order-calculation-app.web.app/",
       keywords: ["React", "Firebase", "UI/UX"],
       images: ["/Ord-C.jpg", "/Ord-C.jpg", "/Ord-C.jpg"]
-    },
-    { 
-      id: 2, 
-      title: "SkillForge Academy (LMS)", 
-      image: "/skillforge.png", 
-      description: "An online learning platform (LMS).",
-      details: "SkillForge Academy is an innovative e-learning platform designed to help users enhance their skills through interactive courses, certifications, and community engagement. Whether you're looking to upskill in coding, design, or business, this platform offers a seamless learning experience with intuitive navigation and progress tracking.",
-      website: "https://webapp.utem.edu.my/student/bitm/b032110154/SkillForge_Academy/",
-      youtube: ["https://www.youtube.com/embed/q2JQ3R-c96A?si=7WsiQ_BMquUxusEm"],
-      keywords: ["PHP", "MySQL", "Bootstrap"]
-    },
-    { 
-      id: 7, 
-      title: "E-commerce Dashboard", 
-      image: "/ecommerce-dashboard.jpg", 
-      description: "A responsive dashboard for an e-commerce platform.",
-      details: "More details about this project...",
-      keywords: ["React", "Firebase", "UI/UX"]
-    },
-    { 
-      id: 8, 
-      title: "Company Portfolio Website", 
-      image: "/company-portfolio.jpg", 
-      description: "A sleek company portfolio website.",
-      details: "More details about this project...",
-      keywords: ["PHP", "Bootstrap"]
     }
   ],
   "Videography": [
     { 
-      id: 3,
-      title: "Personal Portfolio v1", 
-      image: "/Landing page.png", 
-      description: "A personal portfolio showcasing projects.",
+      id: 4,
+      title: "Warna Warni Keharmonian", 
+      image: "/warna-warni-keharmonian.jpg", 
+      description: "A multimedia project celebrating Malaysia’s rich cultural diversity through visually compelling storytelling, photography, and videography.",
       details: "More details about this project...",
-      website: "https://ferdexzra.github.io/online-portfolio",
-      youtube: ["https://www.youtube.com/embed/wxSfOrCxsVc?si=LauHaJAEWOPyhWQy"],
-      keywords: ["Videography", "Editing"]
+      youtube: ["https://www.youtube.com/embed/0cinXpffBgY?si=MGZlTXGVNu3o7uDi"],
+      keywords: ["Videography", "Editing"],
+      images: ["/warna-warni-keharmonian.jpg", "/warna-warni-keharmonian.jpg", "/warna-warni-keharmonian.jpg"]
     },
     { 
-      id: 9,
-      title: "Event Highlight Video", 
-      image: "/event-highlight.jpg", 
-      description: "A cinematic video covering a corporate event.",
+      id: 5,
+      title: "Horro Ads: Corridor", 
+      image: "/horro-ads-corridor.jpg", 
+      description: "An eerie and suspenseful horror-themed advertisement designed to grab the audience's attention and leave a lasting impression.",
       details: "More details about this project...",
-      keywords: ["Videography", "Editing"]
+      youtube: ["https://www.youtube.com/embed/T_HfEtxfWUY?si=Hg7ELG33a-pX0fRH"],
+      keywords: ["Videography", "Editing"],
+      images: ["/horro-ads-corridor.jpg", "/horro-ads-corridor.jpg", "/horro-ads-corridor.jpg"]
     },
     { 
-      id: 10,
-      title: "Short Film Editing", 
-      image: "/short-film.jpg", 
-      description: "A short film showcasing video editing techniques.",
+      id: 6,
+      title: "Product Advertisement: Sugarbomb Perfume", 
+      image: "/product-advertisement-sugarbomb-perfume.jpg", 
+      description: "A stylish and elegant promotional video that captures the essence of Sugarbomb Perfume through high-end visuals and storytelling.",
       details: "More details about this project...",
-      keywords: ["Videography", "Editing"]
+      youtube: ["https://www.youtube.com/embed/ACm_mV3SYtA?si=9NUQEcZBl4OrzSVk"],
+      keywords: ["Videography", "Editing"],
+      images: ["/product-advertisement-sugarbomb-perfume.jpg", "/product-advertisement-sugarbomb-perfume.jpg", "/product-advertisement-sugarbomb-perfume.jpg"]
     }
   ],
   "AR/VR": [
     { 
-      id: 4, 
-      title: "Interactive AR App", 
-      image: "/ar-app.jpg", 
-      description: "Markerless AR application for historical sites.",
+      id: 7, 
+      title: "Interactive Malacca AR", 
+      image: "/interactive-malacca-ar.jpg", 
+      description: "The Interactive Malacca AR app revolutionizes the way people explore Malacca’s rich historical heritage using augmented reality.",
       details: "More details about this project...",
-      youtube: ["https://youtube.com/example"],
-      keywords: ["Unity", "Augmented Reality"]
+      youtube: ["https://www.youtube.com/embed/J8J_IUi3qX4?si=dAChE9i3aLxgDRw3"],
+      keywords: ["Unity", "Augmented Reality"],
+      images: ["/interactive-malacca-ar.jpg", "/interactive-malacca-ar.jpg", "/interactive-malacca-ar.jpg"]
     },
     { 
-      id: 5, 
-      title: "Galaxy Museum VR", 
-      image: "/galaxy-vr.jpg", 
-      description: "A virtual reality museum of the galaxy.",
+      id: 8, 
+      title: "Planet Gallery VR", 
+      image: "/planet-gallery-vr.jpg", 
+      description: "An educational and entertainment-based virtual reality experience that takes users on an awe-inspiring journey across the solar system and beyond.",
       details: "More details about this project...",
-      youtube: ["https://youtube.com/example"],
-      keywords: ["Unreal Engine", "Virtual Reality"]
+      youtube: ["https://www.youtube.com/embed/BDJpSNRWB88?si=eAwMtvq15IbcjlAy"],
+      keywords: ["Unreal Engine", "Virtual Reality"],
+      images: ["/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg"]
+    },
+    { 
+      id: 9, 
+      title: "CGI: UTeM Canselor Hall", 
+      image: "/cgi-utem-canselor-hall.jpg", 
+      description: "A high-fidelity 3D-rendered model of UTeM’s Canselor Hall for promotional and visualization purposes.",
+      details: "More details about this project...",
+      youtube: ["https://www.youtube.com/embed/xLim6oPhVn4?si=TkYjbBsWvwCo9vFM"],
+      keywords: ["Unity", "Augmented Reality"],
+      images: ["/cgi-utem-canselor-hall.jpg", "/cgi-utem-canselor-hall.jpg", "/cgi-utem-canselor-hall.jpg"]
+    }
+  ],
+  "Standalone Applications": [
+    { 
+      id: 10, 
+      title: "Takoyaki UTeM Order Management System", 
+      image: "/takoyaki-utem-order-management-system.jpg", 
+      description: "A standalone C++ application using the command line to manage orders and inventory for Takoyaki UTeM.",
+      details: "More details about this project...",
+      keywords: ["C++", "Standalone Application"],
+      images: ["/takoyaki-utem-order-management-system.jpg", "/takoyaki-utem-order-management-system.jpg", "/takoyaki-utem-order-management-system.jpg"]
     },
     { 
       id: 11, 
-      title: "Virtual Tour App", 
-      image: "/virtual-tour.jpg", 
-      description: "A VR app for interactive virtual tours.",
+      title: "Helmet Charter System", 
+      image: "/helmet-charter-system.jpg", 
+      description: "A Java application promoting helmet awareness, fit testing, and road safety education.",
       details: "More details about this project...",
-      youtube: ["https://youtube.com/example"],
-      keywords: ["Unity", "Virtual Reality"]
-    },
-    { 
-      id: 12, 
-      title: "AR Product Visualization", 
-      image: "/ar-product.jpg", 
-      description: "An AR app for visualizing 3D products.",
-      details: "More details about this project...",
-      keywords: ["Unity", "Augmented Reality"]
+      youtube: ["https://www.youtube.com/embed/tjNLR3sNwS4?si=l_YUZkH48Fg2YgLK"],
+      keywords: ["Java", "Standalone Application"],
+      images: ["/helmet-charter-system.jpg", "/helmet-charter-system.jpg", "/helmet-charter-system.jpg"]
     }
   ],
-  "Other Projects": [
+  "Games": [
     { 
-      id: 6, 
-      title: "Standalone C++ Program", 
-      image: "/cpp-project.jpg", 
-      description: "An order management system using C++.",
+      id: 12, 
+      title: "Multiplatform Game: Dedalo", 
+      image: "/multiplatform-game-dedalo.jpg", 
+      description: "A cross-platform puzzle-adventure game that challenges players with engaging brain-teasing levels and immersive storytelling.",
       details: "More details about this project...",
-      keywords: ["C++", "Standalone Application"]
+      youtube: ["https://www.youtube.com/embed/rl3Ec4jODgM?si=IQXrwaMHkYGtSNcm"],
+      keywords: ["Unity", "Game Development"],
+      images: ["/multiplatform-game-dedalo.jpg", "/multiplatform-game-dedalo.jpg", "/multiplatform-game-dedalo.jpg"]
     },
     { 
       id: 13, 
-      title: "Python Data Analysis Tool", 
-      image: "/python-tool.jpg", 
-      description: "A data analysis and visualization tool using Python.",
+      title: "2D Game: Hungry Monkey", 
+      image: "/2d-game-hungry-monkey.jpg", 
+      description: "A 2D game where players control a hungry monkey to collect fruits while avoiding obstacles.",
       details: "More details about this project...",
-      keywords: ["Python", "Data Analysis"]
-    },
-    { 
-      id: 14, 
-      title: "IoT Smart Home System", 
-      image: "/iot-smart-home.jpg", 
-      description: "A smart home automation system using IoT.",
-      details: "More details about this project...",
-      keywords: ["IoT", "Embedded Systems"]
+      youtube: ["https://www.youtube.com/embed/GiI0z2HWdiY?si=G8V56KBQaVZeghYQ"],
+      keywords: ["Unity", "Game Development"],
+      images: ["/2d-game-hungry-monkey.jpg", "/2d-game-hungry-monkey.jpg", "/2d-game-hungry-monkey.jpg"]
     }
   ]
 };
@@ -194,7 +206,7 @@ const ProjectsSection: React.FC = () => {
           {categories.map((category) => (
             <button
               key={category}
-              className={`px-6 py-2 rounded-full text-white font-semibold transition text-lg md:text-xl ${
+              className={`px-6 py-2 rounded-full text-white font-semibold transition text-[12px] md:text-sm ${
                 selectedCategory === category 
                   ? "bg-purple-600 shadow-md scale-105"  // Active state
                   : "bg-gray-700 hover:bg-purple-500"
@@ -262,7 +274,7 @@ const ProjectsSection: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* ✅ Full-Screen Expanded Project View */}
+      {/* // Full-Screen Expanded Project View */}
       <AnimatePresence>
         {expandedProject && (
           <motion.div 
@@ -273,7 +285,7 @@ const ProjectsSection: React.FC = () => {
             onClick={() => setExpandedProject(null)} // Close on background click
           >
             <motion.div 
-              className="bg-gray-900 text-white p-6 rounded-lg shadow-lg max-w-3xl w-full relative"
+              className="bg-gray-900 text-white p-6 rounded-lg shadow-lg max-w-3xl w-full relative overflow-y-auto max-h-[80vh]"
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
@@ -288,7 +300,7 @@ const ProjectsSection: React.FC = () => {
 
               <h2 className="text-3xl font-bold mb-4">{expandedProject.title}</h2>
 
-              {/* ✅ Embedded YouTube Video if available */}
+              {/* Embedded YouTube Video if available */}
               {expandedProject.youtube && expandedProject.youtube.length > 0 && (
                 <div className="youtube-videos flex flex-wrap justify-center gap-4 my-5">
                   {expandedProject.youtube.map((link, index) => (
@@ -308,7 +320,7 @@ const ProjectsSection: React.FC = () => {
                 </div>
               )}
 
-              {/* ✅ Display Multiple Images in a Swiper Carousel */}
+              {/* Display Multiple Images in a Swiper Carousel */}
               {expandedProject.images && expandedProject.images.length > 0 && (
                 <div className="project-images my-5 px-10">
                   <Swiper
@@ -342,7 +354,7 @@ const ProjectsSection: React.FC = () => {
               
               <p className="text-gray-300 px-5 py-3">{expandedProject.details}</p>  
 
-              {/* ✅ Website Link */}
+              {/* Website Link */}
               {expandedProject.website && (
                 <div className="mt-4">
                   <a 
@@ -358,6 +370,7 @@ const ProjectsSection: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
 
       {/* ✅ Full-Size Image Modal */}
       <AnimatePresence>
