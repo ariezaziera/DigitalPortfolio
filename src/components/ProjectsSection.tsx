@@ -206,7 +206,7 @@ const ProjectsSection: React.FC = () => {
           {categories.map((category) => (
             <button
               key={category}
-              className={`px-6 py-2 rounded-full text-white font-semibold transition text-[12px] md:text-sm ${
+              className={`px-6 py-2 rounded-full text-white font-semibold transition text-[10px] md:text-sm ${
                 selectedCategory === category 
                   ? "bg-purple-600 shadow-md scale-105"  // Active state
                   : "bg-gray-700 hover:bg-purple-500"

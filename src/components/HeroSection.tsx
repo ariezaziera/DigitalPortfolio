@@ -21,7 +21,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative flex flex-col items-center pt-25"
+        className="relative flex flex-col items-center pt-5 md:pt-25"
       >
         {/* Title */}
         <h1 className="text-5xl md:text-7xl font-bold">
