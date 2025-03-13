@@ -8,8 +8,37 @@ import "swiper/css/pagination";
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { SiNextdotjs, SiTailwindcss, SiFramer, SiFirebase, SiFigma } from "react-icons/si";
-import { FaChevronCircleDown } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiFramer,
+  SiFirebase,
+  SiFigma,
+  SiMysql,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiApple,
+  SiUnity,
+  SiBlender,
+  SiAdobeillustrator,
+  SiUnrealengine,
+  SiCplusplus,
+  SiReact,
+  SiAdobephotoshop, // Placeholder for C#
+} from "react-icons/si";
+
+import {
+  FaTerminal,
+  FaVideo,
+  FaVolumeUp,
+  FaCamera,
+  FaLightbulb,
+  FaCode, // Placeholder for Eclipse IDE
+  FaMobile, // Corrected for FaMobileAlt
+  FaChevronCircleDown, // Corrected for FaChevronCircleDown
+} from "react-icons/fa";
+
 
 // ✅ Define TypeScript interfaces
 interface Project {
@@ -29,22 +58,61 @@ interface Project {
   solution?: string;
 }
 
-// ✅ Define keyword color mapping
 const keywordColors: Record<string, string> = {
+  // Web Development
   "React": "bg-blue-500",
   "Firebase": "bg-orange-500",
-  "UI/UX": "bg-green-500",
+  "UI/UX Design": "bg-green-500",
   "PHPMyAdmin": "bg-purple-500",
   "MySQL": "bg-yellow-500",
   "Bootstrap": "bg-indigo-500",
+  "HTML": "bg-orange-400",
+  "CSS": "bg-blue-400",
+  "JavaScript": "bg-yellow-400",
+
+  // Videography
   "Videography": "bg-red-500",
   "Editing": "bg-pink-500",
-  "Unity": "bg-gray-500",
+  "Adobe Premiere Pro": "bg-blue-600",
+  "After Effects": "bg-purple-500",
+  "Adobe Audition": "bg-blue-500",
+  "Adobe Illustrator": "bg-orange-500",
+  "Sound Design": "bg-green-600",
+  "Green Screen Effects": "bg-teal-600",
+  "Lighting Equipment": "bg-yellow-600",
+
+  // AR/VR
+  "Unity": "bg-blue-800",
   "Augmented Reality": "bg-teal-500",
   "Unreal Engine": "bg-blue-600",
   "Virtual Reality": "bg-cyan-500",
+  "Blender": "bg-orange-600",
+  "ARCore": "bg-teal-700",
+  "Oculus Rift": "bg-purple-700",
+
+  // Standalone Applications
   "C++": "bg-gray-700",
-  "Standalone Application": "bg-gray-800"
+  "Java": "bg-red-600",
+  "Standalone Application": "bg-gray-800",
+  "Command-line interface": "bg-gray-900",
+  "Eclipse IDE": "bg-purple-800",
+  "Visual Studio": "bg-blue-900",
+  "Visual Studio Code": "bg-blue-500",
+
+  // Games
+  "Game Development": "bg-purple-600",
+  "Puzzle-Adventure": "bg-indigo-600",
+  "2D Platformer": "bg-green-700",
+  "C#": "bg-purple-500",
+  "Photoshop": "bg-blue-500",
+  "Animation Tools": "bg-pink-600",
+
+  // Miscellaneous
+  "AI-powered recommendations": "bg-teal-400",
+  "3D Rendering": "bg-orange-700",
+  "Architectural Visualization": "bg-blue-700",
+  "Marketing": "bg-pink-500",
+  "Presentations": "bg-indigo-400",
 };
 
 // Define the project categories
@@ -54,66 +122,67 @@ const allProjectsData: Record<string, Project[]> = {
       id: 1, 
       title: "SkillForge Academy", 
       image: "/skillforge.png", 
-      description: "An innovative e-learning platform designed to help users enhance their skills through interactive courses, certifications, and community engagement.",
-      details: "SkillForge Academy is an innovative e-learning platform designed to help users enhance their skills through interactive courses, certifications, and community engagement. Whether you're looking to upskill in coding, design, or business, this platform offers a seamless learning experience with intuitive navigation and progress tracking.",
+      description: "A learning website where users can take courses, earn certificates, and get AI suggestions to improve their skills easily.",
+      details: "SkillForge Academy is an e-learning platform designed to offer interactive courses, certifications, and AI-powered learning recommendations. Built using PHP, MySQL, HTML, CSS, and JavaScript, it provides a seamless learning experience with multi-role authentication, allowing students, instructors, and administrators to access features tailored to their needs. Users can track progress, complete assignments, and earn certifications. The system also includes an intuitive dashboard, secure authentication, and a responsive UI to ensure accessibility across devices. Designed for efficiency and engagement, it enhances digital learning with a user-friendly interface and structured course management.",
       website: "https://webapp.utem.edu.my/student/bitm/b032110154/SkillForge_Academy/",
       youtube: ["https://www.youtube.com/embed/q2JQ3R-c96A?si=7WsiQ_BMquUxusEm"],
-      keywords: ["PHPMyAdmin", "MySQL", "HTML", "CSS", "Javascript"],
+      keywords: ["E-learning", "PHPMyAdmin", "MySQL", "HTML", "CSS", "JavaScript", "UI/UX Design", "Frontend Development"],
       images: ["/skillforge.png", "/skillforge.png", "/skillforge.png"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Full-stack Developer, UI/UX Designer & Group Leader",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
+        { name: "PHPMyAdmin", icon: <SiMysql className="text-blue-500" /> },
+        { name: "MySQL", icon: <SiMysql className="text-blue-500" /> },
+        { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
+        { name: "CSS", icon: <SiCss3 className="text-blue-500" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
         { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used PHPMyAdmin for secure multi-role authentication"
+      keyFeatures: ["Interactive courses", "Certifications", "AI-powered course recommendations", "Progress tracking", "Multi-role authentication"],
+      challenges: "Implementing secure multi-role authentication and managing complex database queries.",
+      solution: "Used PHPMyAdmin and MySQL to create a secure database structure and enforce role-based access control."
     },
     { 
       id: 2, 
       title: "Personal Portfolio v1", 
       image: "/Landing page.png", 
-      description: "A personal portfolio showcasing projects, skills, and achievements, built using HTML, CSS, and JavaScript.",
-      details: "More details about this project...",
+      description: "A simple personal website showing projects, skills, and achievements with easy navigation, nice design, and mobile-friendly layout.",
+      details: "A personal portfolio website showcasing my web development, UI/UX design, and multimedia projects. Built using HTML, CSS, and JavaScript, it features a clean and modern design, smooth navigation, and a responsive layout to ensure an optimal viewing experience on all devices. The site includes interactive project galleries, an about section, contact forms, and social media links to connect with recruiters and potential clients. It highlights my technical skills, creative approach, and professional achievements, serving as an online resume to attract job opportunities and freelance projects.",
       website: "https://ferdexzra.github.io/online-portfolio",
       youtube: ["https://www.youtube.com/embed/wxSfOrCxsVc?si=LauHaJAEWOPyhWQy"],
-      keywords: ["Videography", "Editing"],
+      keywords: ["Portfolio Website", "HTML", "CSS", "JavaScript", "UI/UX Design", "Frontend Development", "Responsive Design"],
       images: ["/Landing page.png", "/Landing page.png", "/Landing page.png"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Full-stack Developer & UI/UX Designer",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
+        { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
+        { name: "CSS", icon: <SiCss3 className="text-blue-500" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
         { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Responsive design", "Project showcase", "Skills section", "Contact form", "Mobile-friendly layout"],
+      challenges: "Ensuring cross-browser compatibility and responsive design for various screen sizes.",
+      solution: "Used modern CSS techniques (Flexbox, Grid) and media queries to create a fully responsive and consistent layout."
     },
     { 
       id: 3, 
       title: "Web-Based Order Calculator", 
       image: "/Ord-C.jpg", 
-      description: "A web-based tool for order calculation, built using HTML, CSS, JavaScript, Firebase Firehost, and Firestore. Designed with Figma.",
-      details: "More details about this project...",
+      description: "A website tool that helps calculate orders quickly using Firebase, making business transactions easier and faster for users.",
+      details: "A web-based tool designed to automate order calculations and streamline business transactions. Developed with React and Firebase, it features a dynamic interface, real-time data updates, and secure authentication for seamless order and inventory management. The application allows sales representatives to input order details, calculate totals automatically, and generate structured order summaries. Built with a user-friendly design and mobile compatibility, it improves efficiency by eliminating manual errors and repetitive calculations. Designed for retail and wholesale businesses, it enhances productivity while ensuring smooth transactions.",
       website: "https://order-calculation-app.web.app/",
-      keywords: ["React", "Firebase", "UI/UX"],
+      keywords: ["Order Management", "React", "Firebase", "HTML", "CSS", "JavaScript", "UI/UX Design", "Business Tool"],
       images: ["/Ord-C.jpg", "/Ord-C.jpg", "/Ord-C.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Full-stack Developer & UI/UX Designer",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-white" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-white" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-white" /> },
-        { name: "Figma", icon: <SiFigma className="text-white" /> },
+        { name: "React", icon: <SiReact className="text-blue-500" /> },
+        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
+        { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
+        { name: "CSS", icon: <SiCss3 className="text-blue-500" /> },
+        { name: "JavaScript", icon: <SiJavascript className="text-yellow-500" /> },
+        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Real-time order calculation", "Firebase integration", "User-friendly interface", "Inventory management", "Order history"],
+      challenges: "Handling real-time data synchronization and ensuring accurate calculations.",
+      solution: "Integrated Firebase Firestore for real-time data updates and implemented validation checks for accurate calculations."
     }
   ],
   "Videography": [
@@ -121,64 +190,62 @@ const allProjectsData: Record<string, Project[]> = {
       id: 4,
       title: "Warna Warni Keharmonian", 
       image: "/wwk.jpg", 
-      description: "A multimedia project celebrating Malaysia’s rich cultural diversity through visually compelling storytelling, photography, and videography.",
-      details: "More details about this project...",
+      description: "A video showing Malaysia’s cultures with beautiful scenes, colorful visuals, and interesting stories to entertain and educate people.",
+      details: "A multimedia project celebrating Malaysia’s rich cultural diversity through a combination of storytelling, photography, and videography. Created with Adobe Premiere Pro and After Effects, this project presents a vibrant narrative that explores the traditions, festivals, and lifestyles of various ethnic communities in Malaysia. The video features high-quality visuals, smooth transitions, and immersive sound design, capturing the essence of cultural harmony. With a blend of informative and artistic elements, the project aims to educate, inspire, and promote unity among Malaysians through engaging digital storytelling.",
       youtube: ["https://www.youtube.com/embed/0cinXpffBgY?si=MGZlTXGVNu3o7uDi", "https://www.youtube.com/embed/AqjiNCVW6rQ?si=p_hA3oi_4pCPpI1M"],
-      keywords: ["Videography", "Editing"],
+      keywords: ["Cultural Video", "Videography", "Editing", "Malaysia Heritage", "Storytelling", "Cinematic"],
       images: ["/wwk.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Scriptwriter, Video Editor, Sound Director, Presenter",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "After Effects", icon: <FaCode  className="text-purple-500" /> },
+        { name: "Adobe Audition", icon: <FaCode  className="text-blue-500" /> },
+        { name: "Adobe Illustrator", icon: <SiAdobeillustrator className="text-orange-500" /> },
+        { name: "Premiere Pro", icon: <FaCode  className="text-blue-600" /> },
+        { name: "iPhone 13 (Apple)", icon: <SiApple className="text-gray-500" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Cultural storytelling", "Cinematic visuals", "Smooth transitions", "Engaging narratives", "High-quality editing"],
+      challenges: "Managing large video files and ensuring smooth playback across devices.",
+      solution: "Optimized video compression and used professional editing tools (Adobe Premiere Pro, After Effects) for seamless playback."
     },
     { 
       id: 5,
       title: "Horror Ads: Corridor", 
       image: "/corridor.jpg", 
-      description: "An eerie and suspenseful horror-themed advertisement designed to grab the audience's attention and leave a lasting impression.",
-      details: "More details about this project...",
+      description: "A short horror ad with spooky scenes and scary moments to give viewers an exciting and thrilling experience.",
+      details: "A short horror advertisement designed to captivate audiences with suspenseful scenes, eerie sound design, and immersive storytelling. Created using Adobe Premiere Pro and After Effects, this video uses cinematic effects, color grading, and green screen compositing to enhance the chilling atmosphere. The ad follows a tense storyline where an unsuspecting character experiences paranormal events in a dimly lit corridor, keeping viewers on edge. By combining dramatic pacing, jump scares, and unsettling audio effects, it delivers a gripping horror experience within a short timeframe, perfect for promotional campaigns.",
       youtube: ["https://www.youtube.com/embed/T_HfEtxfWUY?si=Hg7ELG33a-pX0fRH"],
-      keywords: ["Videography", "Editing"],
+      keywords: ["Horror Short Film", "Thriller", "Cinematic Storytelling", "Video Editing", "Sound Design", "Green Screen Effects"],
       images: ["/horro-ads-corridor.jpg", "/horro-ads-corridor.jpg", "/horro-ads-corridor.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Video Editor, Typographer & Audio Director",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "Premiere Pro", icon: <FaCode  className="text-blue-600" /> },
+        { name: "After Effects", icon: <FaCode  className="text-purple-500" /> },
+        { name: "Sound Design", icon: <FaVolumeUp className="text-gray-500" /> }
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Suspenseful storytelling", "Eerie sound design", "Green screen effects", "Cinematic visuals", "Short format"],
+      challenges: "Creating realistic horror effects and maintaining a suspenseful atmosphere.",
+      solution: "Used advanced editing techniques in Adobe Premiere Pro and After Effects, along with professional sound design tools."
     },
     { 
       id: 6,
       title: "Product Advertisement: Sugarbomb Perfume", 
       image: "/sugarbomb.jpg", 
-      description: "A stylish and elegant promotional video that captures the essence of Sugarbomb Perfume through high-end visuals and storytelling.",
-      details: "More details about this project...",
+      description: "A stylish video promoting Sugarbomb Perfume with smooth shots, cool effects, and eye-catching visuals to attract customers.",
+      details: "A visually stunning promotional video for Sugarbomb Perfume, highlighting the product’s elegance and appeal. Produced with Adobe Premiere Pro and After Effects, the ad features smooth cinematography, dynamic transitions, and eye-catching animations that emphasize the luxurious feel of the fragrance. The video showcases close-up shots of the perfume bottle, artistic light effects, and engaging motion graphics, creating a high-end branding experience. Designed for social media and digital marketing, the advertisement captures the essence of sophistication, style, and desirability, making it irresistible to potential customers.",
       youtube: ["https://www.youtube.com/embed/ACm_mV3SYtA?si=9NUQEcZBl4OrzSVk"],
-      keywords: ["Videography", "Editing"],
+      keywords: ["Product Advertising", "Commercial Video", "Brand Marketing", "Visual Storytelling"],
       images: ["/product-advertisement-sugarbomb-perfume.jpg", "/product-advertisement-sugarbomb-perfume.jpg", "/product-advertisement-sugarbomb-perfume.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Cameraman & Video Editor",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "Premiere Pro", icon: <FaCode  className="text-blue-600" /> },
+        { name: "After Effects", icon: <FaCode  className="text-purple-500" /> },
+        { name: "Adobe Illustrator", icon: <SiAdobeillustrator className="text-orange-500" /> },
+        { name: "Redmi Note 9s Camera", icon: <FaCamera className="text-gray-500" /> },
+        { name: "Lighting Equipment", icon: <FaLightbulb className="text-yellow-500" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Stylish visuals", "Smooth transitions", "Eye-catching effects", "Brand storytelling", "High-quality production"],
+      challenges: "Highlighting the product’s elegance while keeping the video engaging.",
+      solution: "Focused on smooth camera movements, vibrant color grading, and dynamic transitions to create a visually appealing ad."
     }
   ],
   "AR/VR": [
@@ -186,64 +253,57 @@ const allProjectsData: Record<string, Project[]> = {
       id: 7, 
       title: "Interactive Malacca AR", 
       image: "/interactive-malacca-ar.jpg", 
-      description: "The Interactive Malacca AR app revolutionizes the way people explore Malacca’s rich historical heritage using augmented reality.",
-      details: "More details about this project...",
+      description: "An AR app that helps users explore Malacca’s historical sites with 3D models, fun facts, and interactive features.",
+      details: "An augmented reality (AR) mobile application that brings Malacca’s historical sites to life through 3D models, interactive features, and informative pop-ups. Developed using Unity and ARCore, the app allows users to explore famous landmarks in an immersive and educational way. By scanning locations with their mobile devices, users can access historical facts, virtual tours, and interactive elements that enhance their learning experience. The project aims to preserve heritage and promote tourism while making history engaging through modern AR technology. It’s ideal for students, tourists, and history enthusiasts.",
       youtube: ["https://www.youtube.com/embed/J8J_IUi3qX4?si=dAChE9i3aLxgDRw3", "https://www.youtube.com/embed/VwiEwmgtuYM?si=jatjifms4SwQ4q3t"],
-      keywords: ["Unity", "Augmented Reality"],
+      keywords: ["Augmented Reality", "Unity", "Blender", "Vuforia", "ARCore", "3D Models", "Historical Exploration"],
       images: ["/interactive-malacca-ar.jpg", "/interactive-malacca-ar.jpg", "/interactive-malacca-ar.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "AR Developer",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "Unity", icon: <SiUnity className="text-gray-500" /> },
+        { name: "Blender", icon: <SiBlender className="text-orange-600" /> },
+        { name: "ARCore", icon: <FaCode  className="text-green-500" /> }, // Custom icon or placeholder
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Augmented reality", "3D models", "Interactive learning", "Historical facts", "Immersive experience"],
+      challenges: "Integrating ARCore and ensuring smooth performance on mobile devices.",
+      solution: "Optimized 3D models and used ARCore’s tracking capabilities to deliver a seamless AR experience."
     },
     { 
       id: 8, 
       title: "Planet Gallery VR", 
       image: "/planet-gallery-vr.jpg", 
-      description: "An educational and entertainment-based virtual reality experience that takes users on an awe-inspiring journey across the solar system and beyond.",
-      details: "More details about this project...",
+      description: "A virtual reality experience guiding users through the solar system with stunning visuals, interactive learning, and immersive exploration.",
+      details: "A virtual reality (VR) experience that takes users on an interactive tour of the solar system, offering breathtaking visuals and real-time planetary data. Developed with Unity and Unreal Engine, the project allows users to explore realistic 3D models of planets, moons, and space phenomena while learning about their characteristics. The immersive environment features smooth navigation, interactive learning panels, and engaging voice narration, making it perfect for astronomy enthusiasts, students, and educators. This VR experience blends education and entertainment, creating a captivating journey through space.",
       youtube: ["https://www.youtube.com/embed/BDJpSNRWB88?si=eAwMtvq15IbcjlAy"],
-      keywords: ["Unreal Engine", "Virtual Reality"],
+      keywords: ["Virtual Reality", "Unreal Engine", "Solar System Exploration", "Immersive Learning"],
       images: ["/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "3D Modeler & VR Developer",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "Unreal Engine", icon: <SiUnrealengine className="text-blue-600" /> },
+        { name: "Blender", icon: <SiBlender className="text-orange-600" /> },
+        { name: "Oculus Rift", icon: <FaCode  className="text-gray-500" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Virtual reality", "Solar system exploration", "Interactive learning", "Stunning visuals", "Immersive storytelling"],
+      challenges: "Creating realistic planetary visuals and ensuring smooth VR performance.",
+      solution: "Used Unity and Unreal Engine to optimize 3D assets and implement smooth VR interactions."
     },
     { 
       id: 9, 
       title: "CGI: UTeM Canselor Hall", 
       image: "/cgi-utem-canselor-hall.jpg", 
-      description: "A high-fidelity 3D-rendered model of UTeM’s Canselor Hall for promotional and visualization purposes.",
-      details: "More details about this project...",
+      description: "A realistic 3D-rendered model showcasing UTeM’s Canselor Hall for presentations, marketing, and architectural visualization with detailed accuracy.",
+      details: "A highly detailed 3D-rendered model of UTeM’s Canselor Hall, designed for presentations, marketing, and virtual walkthroughs. Created using Blender and Unity, the project accurately represents the architectural structure with realistic textures, lighting, and spatial proportions. The model serves as a visualization tool for event planning, academic promotions, and architectural studies. With high-resolution rendering and interactive camera movements, it provides an in-depth look at the hall’s design. This CGI project is ideal for university marketing, project presentations, and virtual reality applications.",
       youtube: ["https://www.youtube.com/embed/xLim6oPhVn4?si=TkYjbBsWvwCo9vFM"],
-      keywords: ["Unity", "Augmented Reality"],
+      keywords: ["3D Rendering", "Microsoft Visual Studio", "C++", "Marketing", "Presentations"],
       images: ["/cgi-utem-canselor-hall.jpg", "/cgi-utem-canselor-hall.jpg", "/cgi-utem-canselor-hall.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Developer & Group Leader",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "Microsoft Visual Studio", icon: <FaCode   className="text-blue-500" /> },
+        { name: "C++", icon: <SiCplusplus className="text-blue-600" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["3D rendering", "Architectural visualization", "High-detail models", "Realistic lighting", "Promotional tool"],
+      challenges: "Achieving realistic lighting and textures for the 3D model.",
+      solution: "Used Blender for high-quality rendering and Unity for realistic lighting effects."
     }
   ],
   "Standalone Applications": [
@@ -251,42 +311,36 @@ const allProjectsData: Record<string, Project[]> = {
       id: 10, 
       title: "Takoyaki UTeM Order Management System", 
       image: "/takoutem.jpg", 
-      description: "A standalone C++ application using the command line to manage orders and inventory for Takoyaki UTeM.",
-      details: "More details about this project...",
-      keywords: ["C++", "Standalone Application"],
+      description: "A C++ command-line application designed to efficiently handle orders, manage inventory, and streamline sales operations for Takoyaki UTeM vendors.",
+      details: "A C++ command-line application designed to help Takoyaki UTeM vendors manage orders and track inventory efficiently. The system allows users to add, modify, and delete orders, automatically calculating totals and keeping track of available stock. With structured menu navigation and error handling, the system ensures smooth operation for vendors. It also includes a sales report generator, providing insights into daily transactions. The project simplifies order processing and reduces manual workload, making it a valuable tool for small food businesses.",
+      keywords: ["C++", "Standalone Application", "Order Management", "Inventory Management"],
       images: ["/takoutem.jpg", "/takoutem1.jpg", "/takoutem3.jpg", "/takoutem4.jpg", "/takoutem5.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Developer",
       toolsUsed: [
-        { name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
+        { name: "C++", icon: <SiCplusplus className="text-blue-600" /> },
+        { name: "Command-line interface", icon: <FaTerminal className="text-gray-500" /> },
       ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      keyFeatures: ["Order management", "Inventory tracking", "Sales reporting", "Command-line interface", "Efficient operations"],
+      challenges: "Handling complex order and inventory data in a command-line interface.",
+      solution: "Implemented a structured data management system using C++ to ensure accurate and efficient operations."
     },
     { 
       id: 11, 
       title: "Helmet Charter System", 
       image: "/helmet-charter-system.jpg", 
-      description: "A Java application promoting helmet awareness, fit testing, and road safety education.",
-      details: "More details about this project...",
+      description: "A Java-based application encouraging helmet safety awareness through interactive fit testing, informative guidelines, and road safety educational content.",
+      details: "A Java-based application promoting helmet safety awareness through interactive fit testing and educational content. Developed using Eclipse IDE, the system allows users to input head measurements, receive helmet size recommendations, and access road safety guidelines. It also features interactive quizzes and safety tips to educate riders on proper helmet usage. Designed with a simple and intuitive UI, the project aims to enhance road safety awareness and encourage responsible riding habits. Ideal for motorcycle riders, safety campaigns, and educational institutions.",
       youtube: ["https://www.youtube.com/embed/tjNLR3sNwS4?si=l_YUZkH48Fg2YgLK"],
-      keywords: ["Java", "Standalone Application"],
+      keywords: ["Java", "Standalone Application", "Helmet Safety", "Charter Management", "Interactive Fit Testing"],
       images: ["/helmet-charter-system.jpg", "/helmet-charter-system.jpg", "/helmet-charter-system.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
+      role: "Developer & Group Leader",
       toolsUsed: [
-{ name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },
-     ],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+        { name: "Java", icon: <FaCode  className="text-red-500" /> },
+        { name: "Eclipse IDE", icon: <FaCode  className="text-purple-500" /> },
+      ],
+      keyFeatures: ["Helmet safety awareness", "Interactive fit testing", "Educational content", "Road safety guidelines", "User-friendly interface"],
+      challenges: "Ensuring accurate fit testing and user engagement.",
+      solution: "Developed interactive Java-based algorithms for fit testing and included engaging educational content."
     }
   ],
   "Games": [
@@ -294,39 +348,39 @@ const allProjectsData: Record<string, Project[]> = {
       id: 12, 
       title: "Multiplatform Game: Dedalo", 
       image: "/multiplatform-game-dedalo.jpg", 
-      description: "A cross-platform puzzle-adventure game that challenges players with engaging brain-teasing levels and immersive storytelling.",
-      details: "More details about this project...",
+      description: "A puzzle-adventure game available on multiple platforms, featuring challenging levels, intriguing storytelling, and engaging gameplay mechanics for players.",
+      details: "A challenging puzzle-adventure game available on multiple platforms, featuring mind-bending mazes and engaging storytelling. Developed with Unity and C#, Dedalo offers players complex puzzles, atmospheric visuals, and a mysterious narrative. Players navigate through intricate labyrinths, solve logic-based challenges, and uncover hidden secrets. The game features smooth controls, immersive sound design, and a gripping storyline, making it an exciting experience for casual gamers and puzzle enthusiasts. With cross-platform compatibility, Dedalo provides an engaging gameplay experience on PC, mobile, and consoles.",
       youtube: ["https://www.youtube.com/embed/rl3Ec4jODgM?si=IQXrwaMHkYGtSNcm"],
-      keywords: ["Unity", "Game Development"],
+      keywords: ["Unity", "Game Development", "Puzzle-Adventure", "Multi-Platform", "Storytelling", "Challenging Levels"],
       images: ["/multiplatform-game-dedalo.jpg", "/multiplatform-game-dedalo.jpg", "/multiplatform-game-dedalo.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
-      toolsUsed: [{ name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      role: "Game Mechanic Developer & Group Leader",
+      toolsUsed: [
+        { name: "Unity", icon: <SiUnity className="text-gray-500" /> },
+        { name: "C#", icon: <SiCplusplus className="text-purple-500" /> },
+        { name: "Blender", icon: <SiBlender className="text-orange-600" /> },
+      ],
+      keyFeatures: ["Puzzle-adventure gameplay", "Cross-platform support", "Challenging levels", "Immersive storytelling", "Engaging mechanics"],
+      challenges: "Designing challenging yet solvable puzzles and ensuring cross-platform compatibility.",
+      solution: "Used Unity’s cross-platform capabilities and playtested extensively to balance puzzle difficulty."
     },
     { 
       id: 13, 
       title: "2D Game: Hungry Monkey", 
       image: "/2d-game-hungry-monkey.jpg", 
-      description: "A 2D game where players control a hungry monkey to collect fruits while avoiding obstacles.",
-      details: "More details about this project...",
+      description: "A fun 2D platformer where players help a monkey collect fruits while dodging various obstacles and enemies in vibrant environments.",
+      details: "A fun and engaging 2D platformer where players control a monkey collecting fruits while avoiding obstacles. Built with Unity and C#, the game features colorful graphics, smooth animations, and addictive gameplay mechanics. Players must navigate through various levels, jump over obstacles, dodge enemies, and collect rewards to progress. The game includes multiple difficulty levels, power-ups, and a scoring system to keep players engaged. Designed for casual gamers and children, Hungry Monkey provides a fun, interactive, and skill-building experience with simple yet entertaining gameplay.",
       youtube: ["https://www.youtube.com/embed/GiI0z2HWdiY?si=G8V56KBQaVZeghYQ"],
-      keywords: ["Unity", "Game Development"],
+      keywords: ["Unity", "Game Development", "2D Platformer", "Fruit Collection", "Obstacle Avoidance"],
       images: ["/2d-game-hungry-monkey.jpg", "/2d-game-hungry-monkey.jpg", "/2d-game-hungry-monkey.jpg"],
-      role: "Frontend Developer & UI/UX Designer",
-      toolsUsed: [{ name: "Next.js", icon: <SiNextdotjs className="text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="text-blue-500" /> },
-        { name: "Framer Motion", icon: <SiFramer className="text-purple-500" /> },
-        { name: "Firebase", icon: <SiFirebase className="text-orange-500" /> },
-        { name: "Figma", icon: <SiFigma className="text-pink-400" /> },],
-      keyFeatures: ["Interactive courses", "certifications", "AI-powered course recommendations"],
-      challenges: "Implementing Firebase authentication across multiple user roles",
-      solution: "Used Firebase Firestore rules for secure multi-role authentication"
+      role: "Game Designer & Developer",
+      toolsUsed: [
+        { name: "Unity", icon: <SiUnity className="text-gray-500" /> },
+        { name: "C#", icon: <SiCplusplus className="text-purple-500" /> },
+        { name: "Photoshop", icon: <SiAdobephotoshop className="text-blue-500" /> },
+      ],
+      keyFeatures: ["2D platformer", "Fruit collection", "Obstacle avoidance", "Vibrant environments", "Addictive gameplay"],
+      challenges: "Creating smooth controls and engaging level design.",
+      solution: "Implemented responsive controls in Unity and designed levels with increasing difficulty to keep players engaged."
     }
   ]
 };
@@ -406,7 +460,7 @@ const ProjectsSection: React.FC = () => {
               </motion.p>
 
               {/* Click to Expand Text */}
-              <p className="my-10 font-semibold hover:underline text-[13px]">Click to expand</p>
+              <p className="my-5 font-semibold hover:underline text-[13px]">Click to expand</p>
 
               {/* Keyword Badges */}
               <div className="flex flex-wrap gap-2">

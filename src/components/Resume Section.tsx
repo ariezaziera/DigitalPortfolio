@@ -8,18 +8,25 @@ import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiFigma, SiFramer,
 // ✅ Experiences Data
 const experiences = [
   {
-    role: "Multimedia Intern",
-    company: "Prepaid Technologies Sdn Bhd",
-    duration: "Oct 2024 - Mar 2025",
-    logo: "/logoUTeM.png",
-    description: "lorem ipsum",
+    role: "Global Initiative for Future Talent (GIFT) Program – Khazanah & PersolKelly",
+    company: "Khazanah Nasional Berhad",
+    duration: "Jan 2025 - Present",
+    logo: "/GIFT.png",
+    description: ["I was selected to participate in the GIFT (Global Initiative for Future Talent) program, a fully sponsored six-month training initiative funded by Khazanah and facilitated by PersolKelly."]
   },
   {
-    role: "Multimedia Intern",
+    role: "Multimedia cum Administrative (Internship)",
     company: "Prepaid Technologies Sdn Bhd",
     duration: "Oct 2024 - Mar 2025",
+    logo: "/esystem.png",
+    description: ["Developed an Order Calculator Web App, integrating Firebase and JavaScript to automate dealer order processing, improving accuracy and reducing errors by 70%."]
+  },
+  {
+    role: "Computer Science Student Interactive Media",
+    company: "Universiti Teknikal Malaysia Melaka",
+    duration: "Oct 2021 - Mar 2025",
     logo: "/logoUTeM.png",
-    description: "lorem ipsum",
+    description: "Developed an Interactive Malacca Historical Sites Markerless AR App, combining AR technology and interactive media.",
   },
 ];
 
@@ -27,21 +34,21 @@ const experiences = [
 const education = [
   {
     degree: "Bachelor of Computer Science (Interactive Media)",
-    institution: "Your University Name",
-    duration: "2020 - 2025",
+    institution: "Universiti Teknikal Malaysia Melaka",
+    duration: "2021 - 2025",
     logo: "/logoUTeM.png",
   },
   {
-    degree: "Bachelor of Computer Science (Interactive Media)",
-    institution: "Your University Name",
-    duration: "2020 - 2025",
-    logo: "/utem-logo.png",
+    degree: "Sijil Tinggi Pelajaran Malaysia (STPM)",
+    institution: "SMK Gelang Patah",
+    duration: "2019 - 2021",
+    logo: "/smkgp.png",
   },
   {
-    degree: "Bachelor of Computer Science (Interactive Media)",
-    institution: "Your University Name",
-    duration: "2020 - 2025",
-    logo: "/utem-logo.png",
+    degree: "Sijil Pelajaran Malaysia (SPM)",
+    institution: "SMK Gelang Patah",
+    duration: "2014 - 2018",
+    logo: "/smkgp.png",
   },
 ];
 
@@ -185,7 +192,7 @@ const ResumeSection = () => {
                   <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                   {/* 🟢 Mobile-Friendly Layout */}
-                  <div className="flex flex-col md:flex-row items-center md:items-start gap-2">
+                  <div className="flex flex-col md:flex-row md:items-center gap-2">
                     {/* Logo */}
                     <div className="h-12 flex-shrink-0 flex items-center">
                       <Image
