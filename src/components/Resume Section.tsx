@@ -22,7 +22,7 @@ const experiences = [
     description: ["Developed an Order Calculator Web App, integrating Firebase and JavaScript to automate dealer order processing, improving accuracy and reducing errors by 70%."]
   },
   {
-    role: "Computer Science Student Interactive Media",
+    role: "Computer Science Student | Interactive Media, Web Development, AR/VR",
     company: "Universiti Teknikal Malaysia Melaka",
     duration: "Oct 2021 - Mar 2025",
     logo: "/logoUTeM.png",
@@ -142,7 +142,7 @@ const ResumeSection = () => {
                   {/* 🟢 Mobile-Friendly Layout */}
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     {/* Logo */}
-                    <div className="h-12 flex-shrink-0 flex items-center">
+                    <div className="h-12 flex-shrink-0 flex items-center mb-5 md:mr-5">
                       <Image
                         src={exp.logo}
                         alt={`${exp.company} Logo`}
@@ -154,8 +154,8 @@ const ResumeSection = () => {
 
                     {/* Details */}
                     <div className="md:text-start">
-                      <h4 className="text-lg font-bold text-white flex items-center gap-2">
-                        {exp.role} <FaUserTie className="text-gray-400" />
+                    <h4 className="text-lg font-bold text-white flex items-center gap-2 text-left">
+                    {exp.role} <FaUserTie className="text-gray-400" />
                       </h4>
                       <p className="text-gray-400 text-start">{exp.company}</p>
                       <p className="text-gray-500 text-sm flex items-center gap-2">
@@ -194,7 +194,7 @@ const ResumeSection = () => {
                   {/* 🟢 Mobile-Friendly Layout */}
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     {/* Logo */}
-                    <div className="h-12 flex-shrink-0 flex items-center">
+                    <div className="h-12 flex-shrink-0 flex items-center mb-5 md:mr-5">
                       <Image
                         src={edu.logo}
                         alt={`${edu.institution} Logo`}
