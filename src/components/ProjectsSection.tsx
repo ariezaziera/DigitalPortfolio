@@ -510,7 +510,7 @@ const ProjectsSection: React.FC = () => {
               {expandedProject.youtube && expandedProject.youtube.length > 0 && (
                 <div className="youtube-videos flex flex-wrap justify-center gap-4 my-5">
                   {expandedProject.youtube.map((link, index) => (
-                    <div key={index} className="w-full md:w-[48%] lg:w-[30%] aspect-video">
+                    <div key={index} className="w-full md:w-[58%] lg:w-[40%] aspect-video">
                       <iframe
                         src={link}
                         title={`YouTube video ${index + 1}`}
@@ -526,7 +526,7 @@ const ProjectsSection: React.FC = () => {
 
               {/* Display Multiple Images in a Swiper Carousel */}
               {expandedProject.images && expandedProject.images.length > 0 && (
-                <div className="project-images my-5 px-10">
+                <div className="project-images my-5 md:px-10">
                   <Swiper
                     modules={[Navigation, Pagination]}
                     navigation
@@ -569,7 +569,7 @@ const ProjectsSection: React.FC = () => {
                 </div>
               )}
 
-              <div className="project-details my-10 text-start mx-12">
+              <div className="project-details my-10 text-start md:mx-12">
                 <h3 className="text-2xl font-bold mb-5">Project Details</h3>
                 <ul>
                   <li className="mb-5">
