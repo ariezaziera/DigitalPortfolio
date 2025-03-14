@@ -55,9 +55,13 @@ const ContactSection = () => {
           <div className="mb-4">
             <textarea rows={4} name="message" placeholder="Your Message" className="w-full p-3 rounded-lg bg-purple-100 text-black border border-gray-600 focus:outline-none focus:border-purple-400" required></textarea>
           </div>
-          <button type="submit" className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+          <motion.button
+            type="submit"
+            className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300"
+            whileTap={{ scale: 0.9 }} // Shrink slightly when clicked
+          >
             Send Message
-          </button>
+          </motion.button>
         </motion.form>
 
         {/* Social Media Links with Icons */}
