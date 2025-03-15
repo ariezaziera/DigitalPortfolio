@@ -57,12 +57,16 @@ const ContactSection = () => {
           </div>
           <motion.button
             type="submit"
-            className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300"
-            onTapStart={() => console.log("Tapped!")} // Debugging to see if tap is detected
-            whileTap={{ scale: 0.8, boxShadow: "0px 0px 12px 4px rgba(168, 85, 247, 0.8)" }} // Button shrinks on click
-            whileHover={{
-              scale: 0.8, boxShadow: "0px 0px 12px 4px rgba(168, 85, 247, 0.8)", // Glowing border effect
+            className="relative bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-lg transition duration-200 focus:outline-none"
+            onTapStart={() => console.log("Tapped!")} // Debugging for tap detection
+            whileTap={{ 
+              scale: 0.98, 
+              boxShadow: "0px 0px 15px 4px rgba(168, 85, 247, 1)" // Stronger neon glow effect
             }}
+            whileHover={{ 
+              boxShadow: "0px 0px 15px 4px rgba(168, 85, 247, 0.8)", // Glowing effect on hover
+            }}
+            transition={{ type: "spring", stiffness: 500, damping: 20 }} // Smooth animation
           >
             Send Message
           </motion.button>
