@@ -40,7 +40,7 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className="absolute top-16 left-0 w-full bg-[#0E0D0E] text-center py-4 shadow-lg md:hidden"
             >
-              {["About", "Projects", "Contact", "Resume"].map((item) => (
+              {["About", "Experience", "Projects", "Contact"].map((item) => (
                 <motion.li 
                   key={item} 
                   className="py-2"
@@ -58,7 +58,7 @@ export default function Navbar() {
 
         {/* ✅ Desktop Navigation with Hover Animation */}
         <ul className="hidden md:flex gap-6">
-        {["About", "Projects", "Contact", "Resume"].map((item) => (
+        {["About", "Experience", "Projects", "Contact"].map((item) => (
             <motion.li 
             key={item} 
             className="relative"

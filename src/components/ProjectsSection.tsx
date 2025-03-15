@@ -399,7 +399,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="py-20 px-6 text-center text-gray-100 bg-[#0E0D0E]">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl font-bold">My Projects</h2>
+        <h2 className="text-4xl font-bold mb-10">My Projects</h2>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center items-center gap-2 md:gap-4 mt-6 px-4">

@@ -83,20 +83,24 @@ const ResumeSection = () => {
   const isOdd = skillCategories.length % 2 !== 0;
 
   return (
-    <section id="resume">
+    <section 
+        id="experience" 
+        className="py-20 px-10 md:px-12 lg:px-32 xs:px-5 text-white" 
+        style={{ backgroundColor: "rgba(14, 13, 14, 1)" }}
+      >
+          <h2 className="text-4xl font-bold mb-10 text-center">My Resume</h2>
+
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex flex-col items-center text-center py-16 px-6"
+        className="flex flex-col items-center text-center pb-16 px-6"
       >
-        <h2 className="text-3xl font-bold text-gray-200 mb-8">My Resume</h2>
-
         {/* 🔹 Download Resume Button (Enhanced) */}
         <motion.div
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-10 relative group cursor-pointer mb-15"
+          className="relative group cursor-pointer mb-15"
         >
           {/* Glowing Effect */}
           <motion.div 
