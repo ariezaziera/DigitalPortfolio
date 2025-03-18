@@ -85,7 +85,7 @@ const ResumeSection = () => {
   return (
     <section 
         id="experience" 
-        className="py-20 px-10 md:px-12 lg:px-32 xs:px-5 text-white" 
+        className="py-20 px-7 md:px-5 lg:px-10 xs:px-5 text-white" 
         style={{ backgroundColor: "rgba(14, 13, 14, 1)" }}
       >
           <h2 className="text-4xl font-bold mb-10 text-center">My Resume</h2>
@@ -94,7 +94,7 @@ const ResumeSection = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex flex-col items-center text-center pb-16 px-6"
+        className="flex flex-col items-center text-center pb-16"
       >
         {/* 🔹 Download Resume Button (Enhanced) */}
         <motion.div
