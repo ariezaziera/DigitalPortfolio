@@ -1,9 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaDownload, FaBriefcase, FaGraduationCap, FaCalendarAlt, FaUserTie } from "react-icons/fa";
+import { FaDownload, FaBriefcase, FaGraduationCap, FaCalendarAlt, FaUserTie, FaVideo, FaCode } from "react-icons/fa";
 import Image from "next/image";
-import { SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiFigma, SiFramer, SiGit, SiVercel } from "react-icons/si";
+import { 
+  SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiFigma, 
+  SiFramer, SiFirebase, SiMysql, SiCplusplus, SiAdobeillustrator, 
+  SiAdobephotoshop, SiUnity, SiUnrealengine, SiBlender, SiGit, 
+  SiVercel 
+} from "react-icons/si"; 
+
 
 // ✅ Experiences Data
 const experiences = [
@@ -67,14 +73,40 @@ const categorizedSkills = {
     { name: "JavaScript", level: 80, icon: <SiJavascript className="text-yellow-400" /> },
     { name: "React", level: 75, icon: <SiReact className="text-blue-300" /> },
     { name: "Next.js", level: 70, icon: <SiNextdotjs className="text-white" /> },
+    { name: "PHP", level: 65, icon: <FaCode className="text-purple-500" /> }, 
+    { name: "Firebase", level: 70, icon: <SiFirebase className="text-orange-500" /> },
+    { name: "MySQL", level: 70, icon: <SiMysql className="text-blue-500" /> },
   ],
+  
   "UI/UX & Design": [
     { name: "Figma", level: 85, icon: <SiFigma className="text-pink-400" /> },
-    { name: "Framer Motion", level: 70, icon: <SiFramer className="text-purple-500" /> },
+    { name: "Framer Motion", level: 75, icon: <SiFramer className="text-purple-500" /> },
+    { name: "Adobe Illustrator", level: 65, icon: <SiAdobeillustrator className="text-orange-500" /> },
+    { name: "Adobe Photoshop", level: 75, icon: <SiAdobephotoshop className="text-blue-500" /> },
+    { name: "Canva", level: 90, icon: <FaCode className="text-teal-400" /> },
   ],
+
+  "Game Development & AR/VR": [
+    { name: "Unity", level: 65, icon: <SiUnity className="text-gray-500" /> },
+    { name: "Unreal Engine", level: 60, icon: <SiUnrealengine className="text-blue-600" /> },
+    { name: "C++", level: 50, icon: <SiCplusplus className="text-gray-700" /> },
+    { name: "C#", level: 55, icon: <SiCplusplus className="text-purple-500" /> },
+    { name: "Blender", level: 60, icon: <SiBlender className="text-orange-600" /> },
+    { name: "ARCore", level: 55, icon: <FaCode className="text-green-500" /> },
+  ],
+
+  "Videography & Editing": [
+    { name: "Adobe Premiere Pro", level: 85, icon: <FaVideo className="text-blue-600" /> },
+    { name: "After Effects", level: 75, icon: <SiFramer className="text-purple-500" /> },
+    { name: "Adobe Audition", level: 70, icon: <SiAdobeillustrator className="text-orange-500" /> },
+    { name: "DaVinci Resolve", level: 65, icon: <FaCode className="text-gray-500" /> },
+  ],
+
   "Tools & Technologies": [
     { name: "Git", level: 80, icon: <SiGit className="text-red-500" /> },
     { name: "Vercel", level: 75, icon: <SiVercel className="text-gray-300" /> },
+    { name: "Bootstrap", level: 70, icon: <FaCode className="text-indigo-500" /> },
+    { name: "Google Sheets Automation", level: 75, icon: <FaCode className="text-green-500" /> },
   ],
 };
 
@@ -85,7 +117,7 @@ const ResumeSection = () => {
   return (
     <section 
         id="experience" 
-        className="py-20 px-7 md:px-5 lg:px-10 xs:px-5 text-white" 
+        className="py-20 px-7 md:px-5 lg:px-10 pb-0 xs:px-5 text-white" 
         style={{ backgroundColor: "rgba(14, 13, 14, 1)" }}
       >
           <h2 className="text-4xl font-bold mb-10 text-center">My Resume</h2>
@@ -94,7 +126,7 @@ const ResumeSection = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex flex-col items-center text-center pb-16"
+        className="flex flex-col items-center text-center"
       >
         {/* 🔹 Download Resume Button (Enhanced) */}
         <motion.div
@@ -243,7 +275,7 @@ const ResumeSection = () => {
                   <h4 className="text-xl font-bold text-purple-400">{category}</h4>
 
                   {/* Skills Grid */}
-                  <div className="grid-cols-3 sm:grid-cols-3 gap-6 mt-4 flex flex-wrap justify-center">
+                  <div className="grid-cols-2 md:grid-cols-3 gap-10 mt-10 mb-10 flex flex-wrap justify-center">
                     {skills.map((skill, skillIndex) => (
                       <motion.div
                         key={skillIndex}
@@ -273,7 +305,7 @@ const ResumeSection = () => {
 
                   {/* ✅ Vertical Divider for Desktop */}
                   {index % 2 === 0 && index !== skillCategories.length - 1 && (
-                    <div className="hidden md:block absolute top-0 right-[-4%] h-full w-1 bg-gray-600 opacity-40"></div>
+                    <div className="hidden md:block absolute top-0 right-[-4%] h-full w-0.5 bg-gray-600 opacity-40"></div>
                   )}
 
                   {/* ✅ Horizontal Divider for Mobile */}

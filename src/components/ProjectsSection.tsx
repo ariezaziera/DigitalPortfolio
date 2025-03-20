@@ -25,7 +25,8 @@ import {
   SiUnrealengine,
   SiCplusplus,
   SiReact,
-  SiAdobephotoshop, // Placeholder for C#
+  SiAdobephotoshop,
+  SiVercel, // Placeholder for C#
 } from "react-icons/si";
 
 import {
@@ -93,7 +94,7 @@ const keywordColors: Record<string, string> = {
   // Standalone Applications
   "C++": "bg-gray-700",
   "Java": "bg-red-600",
-  "Standalone Application": "bg-gray-800",
+  "Standalone Application": "bg-indigo-700",
   "Command-line interface": "bg-gray-900",
   "Eclipse IDE": "bg-purple-800",
   "Visual Studio": "bg-blue-900",
@@ -113,6 +114,7 @@ const keywordColors: Record<string, string> = {
   "Architectural Visualization": "bg-blue-700",
   "Marketing": "bg-pink-500",
   "Presentations": "bg-indigo-400",
+  "Personal Project": "bg-rose-400"
 };
 
 // Define the project categories
@@ -120,6 +122,35 @@ const allProjectsData: Record<string, Project[]> = {
   "Web Development": [
     { 
       id: 1, 
+      title: "Personal Portfolio v3", 
+      image: "/Personal_Portfolio_v3.png", 
+      description: "A modern and interactive portfolio showcasing my skills, projects, and experiences with smooth animations and a clean UI.",  
+      details: "This is the third iteration of my personal portfolio, built using Next.js, Tailwind CSS, and Framer Motion. The goal was to create a responsive, visually appealing, and interactive portfolio to highlight my web development, UI/UX design, and multimedia projects. It features dynamic animations, project filtering, and a seamless user experience optimized for both desktop and mobile devices.",  
+      website: "https://digital-portfolio-ariezaaziera.vercel.app/",  
+      keywords: ["Personal Project", "Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Design", "Frontend Development", "Responsive Design"],  
+      images: ["/Personal_Portfolio_v3.png", "/Personal_Portfolio_v3.png", "/Personal_Portfolio_v3.png"],  
+      role: "Frontend Developer & UI/UX Designer",  
+      toolsUsed: [  
+        { name: "Next.js", icon: <SiNextdotjs className='text-white' /> },  
+        { name: "Tailwind CSS", icon: <SiTailwindcss className='text-blue-500' /> },  
+        { name: "Framer Motion", icon: <SiFramer className='text-purple-500' /> },  
+        { name: "Figma", icon: <SiFigma className='text-pink-400' /> },  
+        { name: "Vercel", icon: <SiVercel className='text-gray-300' /> }  
+      ],  
+      keyFeatures: [  
+        "Fully responsive design",  
+        "Project showcase with category filters",  
+        "Smooth animations with Framer Motion",  
+        "Downloadable resume section",  
+        "Dark mode support",  
+        "Optimized performance with lazy loading",  
+        "SEO-friendly with meta tags"  
+      ],  
+      challenges: "Ensuring smooth animations without performance lag and structuring project data efficiently.",  
+      solution: "Implemented optimized animations using Framer Motion and improved performance by lazy-loading images and optimizing component rendering."  
+    },      
+    { 
+      id: 3, 
       title: "SkillForge Academy", 
       image: "/skillforge.png", 
       description: "A learning website where users can take courses, earn certificates, and get AI suggestions to improve their skills easily.",
@@ -142,14 +173,13 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Used PHPMyAdmin and MySQL to create a secure database structure and enforce role-based access control."
     },
     { 
-      id: 2, 
+      id: 4, 
       title: "Personal Portfolio v1", 
       image: "/Landing page.png", 
       description: "A simple personal website showing projects, skills, and achievements with easy navigation, nice design, and mobile-friendly layout.",
       details: "A personal portfolio website showcasing my web development, UI/UX design, and multimedia projects. Built using HTML, CSS, and JavaScript, it features a clean and modern design, smooth navigation, and a responsive layout to ensure an optimal viewing experience on all devices. The site includes interactive project galleries, an about section, contact forms, and social media links to connect with recruiters and potential clients. It highlights my technical skills, creative approach, and professional achievements, serving as an online resume to attract job opportunities and freelance projects.",
       website: "https://ferdexzra.github.io/online-portfolio",
-      youtube: ["https://www.youtube.com/embed/wxSfOrCxsVc?si=LauHaJAEWOPyhWQy"],
-      keywords: ["Portfolio Website", "HTML", "CSS", "JavaScript", "UI/UX Design", "Frontend Development", "Responsive Design"],
+      keywords: ["Portfolio Website", "HTML", "CSS", "JavaScript", "UI/UX Design", "Frontend Development", "Personal Project"],
       images: ["/Landing page.png", "/Landing page.png", "/Landing page.png"],
       role: "Full-stack Developer & UI/UX Designer",
       toolsUsed: [
@@ -163,13 +193,13 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Used modern CSS techniques (Flexbox, Grid) and media queries to create a fully responsive and consistent layout."
     },
     { 
-      id: 3, 
+      id: 2, 
       title: "Web-Based Order Calculator", 
       image: "/Ord-C.jpg", 
       description: "A website tool that helps calculate orders quickly using Firebase, making business transactions easier and faster for users.",
       details: "A web-based tool designed to automate order calculations and streamline business transactions. Developed with React and Firebase, it features a dynamic interface, real-time data updates, and secure authentication for seamless order and inventory management. The application allows sales representatives to input order details, calculate totals automatically, and generate structured order summaries. Built with a user-friendly design and mobile compatibility, it improves efficiency by eliminating manual errors and repetitive calculations. Designed for retail and wholesale businesses, it enhances productivity while ensuring smooth transactions.",
       website: "https://order-calculation-app.web.app/",
-      keywords: ["Order Management", "React", "Firebase", "HTML", "CSS", "JavaScript", "UI/UX Design", "Business Tool"],
+      keywords: ["Order Management", "React", "Firebase", "HTML", "CSS", "JavaScript", "UI/UX Design", "Personal Project"],
       images: ["/Ord-C.jpg", "/Ord-C.jpg", "/Ord-C.jpg"],
       role: "Full-stack Developer & UI/UX Designer",
       toolsUsed: [
@@ -187,7 +217,7 @@ const allProjectsData: Record<string, Project[]> = {
   ],
   "Videography": [
     { 
-      id: 4,
+      id: 5,
       title: "Warna Warni Keharmonian", 
       image: "/wwk.jpg", 
       description: "A video showing Malaysia’s cultures with beautiful scenes, colorful visuals, and interesting stories to entertain and educate people.",
@@ -208,7 +238,7 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Optimized video compression and used professional editing tools (Adobe Premiere Pro, After Effects) for seamless playback."
     },
     { 
-      id: 5,
+      id: 6,
       title: "Horror Ads: Corridor", 
       image: "/horro-ads-corridor.jpg", 
       description: "A short horror ad with spooky scenes and scary moments to give viewers an exciting and thrilling experience.",
@@ -227,7 +257,7 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Used advanced editing techniques in Adobe Premiere Pro and After Effects, along with professional sound design tools."
     },
     { 
-      id: 6,
+      id: 7,
       title: "Product Advertisement: Sugarbomb Perfume", 
       image: "/product-advertisement-sugarbomb-perfume.jpg", 
       description: "A stylish video promoting Sugarbomb Perfume with smooth shots, cool effects, and eye-catching visuals to attract customers.",
@@ -246,17 +276,68 @@ const allProjectsData: Record<string, Project[]> = {
       keyFeatures: ["Stylish visuals", "Smooth transitions", "Eye-catching effects", "Brand storytelling", "High-quality production"],
       challenges: "Highlighting the product’s elegance while keeping the video engaging.",
       solution: "Focused on smooth camera movements, vibrant color grading, and dynamic transitions to create a visually appealing ad."
-    }
+    },
+    { 
+      id: 15, 
+      title: "Kill Bill MV", 
+      image: "/Kill_Bill_MV.png", 
+      description: "A high-energy music video inspired by the Kill Bill aesthetic, featuring dynamic visuals, precise editing, and cinematic storytelling.",  
+      details: "This project is a creative interpretation of 'Kill Bill' in the form of a music video. The goal was to blend cinematic storytelling with sharp editing techniques, making use of dynamic cuts, color grading, and smooth transitions. The video integrates various visual effects, lighting techniques, and choreography to enhance the overall viewing experience.",  
+      youtube: ["https://www.youtube.com/embed/TRbgRQb8N6M?si=EBNF7RI7_44sgq8i"],  
+      keywords: ["Videography", "Editing", "Cinematic Storytelling", "Music Video", "Adobe Premiere Pro", "After Effects"],  
+      images: ["/Kill_Bill_MV.png", "/Kill_Bill_MV_2.png", "/Kill_Bill_MV_3.png"],  
+      role: "Director, Video Editor & Cinematographer",  
+      toolsUsed: [  
+        { name: "Adobe Premiere Pro", icon: <SiAdobephotoshop className='text-blue-500' /> },  
+        { name: "After Effects", icon: <SiFramer className='text-purple-500' /> },  
+        { name: "Adobe Audition", icon: <SiAdobeillustrator className='text-orange-500' /> },  
+        { name: "iPhone 11 Pro", icon: <SiApple className='text-gray-500' /> }  
+      ],  
+      keyFeatures: [  
+        "Cinematic storytelling",  
+        "Dynamic editing and transitions",  
+        "Professional color grading",  
+        "Creative camera angles and lighting",  
+        "Seamless sync with audio"  
+      ],  
+      challenges: "Maintaining smooth transitions while keeping the editing style in sync with the song’s rhythm.",  
+      solution: "Used advanced timing techniques in Adobe Premiere Pro and After Effects to ensure smooth cuts and seamless transitions, while enhancing visual aesthetics with color grading."  
+    },
+    { 
+      id: 16, 
+      title: "Camera Transition", 
+      image: "/Camera_Transition.png", 
+      description: "A creative videography project showcasing smooth and seamless camera transitions to enhance storytelling and visual appeal.",  
+      details: "This project focuses on advanced camera transition techniques to create visually engaging and dynamic sequences. The goal was to achieve smooth scene transitions using in-camera movements and post-production editing. The project was shot on an iPhone 11 Pro, utilizing natural motion, perspective shifts, and precise cuts to maintain flow and continuity.",  
+      youtube: ["https://www.youtube.com/embed/kRjfcvbVOjA?si=GsbJyiLIa8IfmPdv"],  
+      keywords: ["Videography", "Editing", "Camera Transitions", "Cinematic", "Adobe Premiere Pro", "After Effects"],  
+      images: ["/Camera_Transition.png", "/Camera_Transition_2.png", "/Camera_Transition_3.png"],  
+      role: "Director, Videographer & Editor",  
+      toolsUsed: [  
+        { name: "Adobe Premiere Pro", icon: <SiAdobephotoshop className='text-blue-500' /> },  
+        { name: "After Effects", icon: <SiFramer className='text-purple-500' /> },  
+        { name: "iPhone 11 Pro", icon: <SiApple className='text-gray-500' /> }  
+      ],  
+      keyFeatures: [  
+        "Seamless camera transitions",  
+        "In-camera movement techniques",  
+        "Dynamic storytelling",  
+        "Smooth editing with precise cuts",  
+        "Cinematic visual effects"  
+      ],  
+      challenges: "Ensuring fluid transitions while keeping the video engaging without noticeable cuts.",  
+      solution: "Used a combination of well-timed camera movements and editing techniques in Adobe Premiere Pro and After Effects to create seamless and natural-looking transitions."  
+    }        
   ],
   "AR/VR": [
     { 
-      id: 7, 
+      id: 8, 
       title: "Interactive Malacca AR", 
       image: "/interactive-malacca-ar.jpg", 
       description: "An AR app that helps users explore Malacca’s historical sites with 3D models, fun facts, and interactive features.",
       details: "An augmented reality (AR) mobile application that brings Malacca’s historical sites to life through 3D models, interactive features, and informative pop-ups. Developed using Unity and ARCore, the app allows users to explore famous landmarks in an immersive and educational way. By scanning locations with their mobile devices, users can access historical facts, virtual tours, and interactive elements that enhance their learning experience. The project aims to preserve heritage and promote tourism while making history engaging through modern AR technology. It’s ideal for students, tourists, and history enthusiasts.",
       youtube: ["https://www.youtube.com/embed/J8J_IUi3qX4?si=dAChE9i3aLxgDRw3", "https://www.youtube.com/embed/VwiEwmgtuYM?si=jatjifms4SwQ4q3t"],
-      keywords: ["Augmented Reality", "Unity", "Blender", "Vuforia", "ARCore", "3D Models", "Historical Exploration"],
+      keywords: ["Augmented Reality", "Unity", "Blender", "Vuforia", "ARCore", "3D Models", "Personal Project"],
       images: ["/interactive-malacca-ar.jpg", "/interactive-malacca-ar.jpg", "/interactive-malacca-ar.jpg"],
       role: "AR Developer",
       toolsUsed: [
@@ -269,12 +350,12 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Optimized 3D models and used ARCore’s tracking capabilities to deliver a seamless AR experience."
     },
     { 
-      id: 8, 
+      id: 9, 
       title: "Planet Gallery VR", 
       image: "/planet-gallery-vr.jpg", 
       description: "A virtual reality experience guiding users through the solar system with stunning visuals, interactive learning, and immersive exploration.",
       details: "A virtual reality (VR) experience that takes users on an interactive tour of the solar system, offering breathtaking visuals and real-time planetary data. Developed with Unity and Unreal Engine, the project allows users to explore realistic 3D models of planets, moons, and space phenomena while learning about their characteristics. The immersive environment features smooth navigation, interactive learning panels, and engaging voice narration, making it perfect for astronomy enthusiasts, students, and educators. This VR experience blends education and entertainment, creating a captivating journey through space.",
-      youtube: ["https://www.youtube.com/embed/BDJpSNRWB88?si=eAwMtvq15IbcjlAy"],
+      youtube: ["https://www.youtube.com/embed/BDJpSNRWB88?si=eAwMtvq15IbcjlAy", "https://www.youtube.com/embed/nCcnw3mwyxE?si=8Ftnl5VMR12phKCo"],
       website: "https://mitoworld.io/world/w/3216/group3",
       keywords: ["Virtual Reality", "Unreal Engine", "Solar System Exploration", "Immersive Learning"],
       images: ["/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg"],
@@ -289,7 +370,7 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Used Unity and Unreal Engine to optimize 3D assets and implement smooth VR interactions."
     },
     { 
-      id: 9, 
+      id: 10, 
       title: "CGI: UTeM Canselor Hall", 
       image: "/cgi-utem-canselor-hall.jpg", 
       description: "A realistic 3D-rendered model showcasing UTeM’s Canselor Hall for presentations, marketing, and architectural visualization with detailed accuracy.",
@@ -309,11 +390,12 @@ const allProjectsData: Record<string, Project[]> = {
   ],
   "Standalone Applications": [
     { 
-      id: 10, 
+      id: 11, 
       title: "Takoyaki UTeM Order Management System", 
       image: "/takoutem.jpg", 
       description: "A C++ command-line application designed to efficiently handle orders, manage inventory, and streamline sales operations for Takoyaki UTeM vendors.",
       details: "A C++ command-line application designed to help Takoyaki UTeM vendors manage orders and track inventory efficiently. The system allows users to add, modify, and delete orders, automatically calculating totals and keeping track of available stock. With structured menu navigation and error handling, the system ensures smooth operation for vendors. It also includes a sales report generator, providing insights into daily transactions. The project simplifies order processing and reduces manual workload, making it a valuable tool for small food businesses.",
+      youtube: ["https://www.youtube.com/embed/X6Nt4zWAXqs?si=ul5LbI7Sae_93AHf"],
       keywords: ["C++", "Standalone Application", "Order Management", "Inventory Management"],
       images: ["/takoutem.jpg", "/takoutem1.jpg", "/takoutem3.jpg", "/takoutem4.jpg", "/takoutem5.jpg"],
       role: "Developer",
@@ -326,7 +408,7 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Implemented a structured data management system using C++ to ensure accurate and efficient operations."
     },
     { 
-      id: 11, 
+      id: 12, 
       title: "Helmet Charter System", 
       image: "/helmet-charter-system.jpg", 
       description: "A Java-based application encouraging helmet safety awareness through interactive fit testing, informative guidelines, and road safety educational content.",
@@ -346,7 +428,7 @@ const allProjectsData: Record<string, Project[]> = {
   ],
   "Games": [
     { 
-      id: 12, 
+      id: 13, 
       title: "Multiplatform Game: Dedalo", 
       image: "/multiplatform-game-dedalo.jpg", 
       description: "A puzzle-adventure game available on multiple platforms, featuring challenging levels, intriguing storytelling, and engaging gameplay mechanics for players.",
@@ -365,7 +447,7 @@ const allProjectsData: Record<string, Project[]> = {
       solution: "Used Unity’s cross-platform capabilities and playtested extensively to balance puzzle difficulty."
     },
     { 
-      id: 13, 
+      id: 14, 
       title: "2D Game: Hungry Monkey", 
       image: "/2d-game-hungry-monkey.jpg", 
       description: "A fun 2D platformer where players help a monkey collect fruits while dodging various obstacles and enemies in vibrant environments.",
