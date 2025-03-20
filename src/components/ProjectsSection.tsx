@@ -210,7 +210,7 @@ const allProjectsData: Record<string, Project[]> = {
     { 
       id: 5,
       title: "Horror Ads: Corridor", 
-      image: "/corridor.jpg", 
+      image: "/horro-ads-corridor.jpg", 
       description: "A short horror ad with spooky scenes and scary moments to give viewers an exciting and thrilling experience.",
       details: "A short horror advertisement designed to captivate audiences with suspenseful scenes, eerie sound design, and immersive storytelling. Created using Adobe Premiere Pro and After Effects, this video uses cinematic effects, color grading, and green screen compositing to enhance the chilling atmosphere. The ad follows a tense storyline where an unsuspecting character experiences paranormal events in a dimly lit corridor, keeping viewers on edge. By combining dramatic pacing, jump scares, and unsettling audio effects, it delivers a gripping horror experience within a short timeframe, perfect for promotional campaigns.",
       youtube: ["https://www.youtube.com/embed/T_HfEtxfWUY?si=Hg7ELG33a-pX0fRH"],
@@ -229,7 +229,7 @@ const allProjectsData: Record<string, Project[]> = {
     { 
       id: 6,
       title: "Product Advertisement: Sugarbomb Perfume", 
-      image: "/sugarbomb.jpg", 
+      image: "/product-advertisement-sugarbomb-perfume.jpg", 
       description: "A stylish video promoting Sugarbomb Perfume with smooth shots, cool effects, and eye-catching visuals to attract customers.",
       details: "A visually stunning promotional video for Sugarbomb Perfume, highlighting the product’s elegance and appeal. Produced with Adobe Premiere Pro and After Effects, the ad features smooth cinematography, dynamic transitions, and eye-catching animations that emphasize the luxurious feel of the fragrance. The video showcases close-up shots of the perfume bottle, artistic light effects, and engaging motion graphics, creating a high-end branding experience. Designed for social media and digital marketing, the advertisement captures the essence of sophistication, style, and desirability, making it irresistible to potential customers.",
       youtube: ["https://www.youtube.com/embed/ACm_mV3SYtA?si=9NUQEcZBl4OrzSVk"],
@@ -275,6 +275,7 @@ const allProjectsData: Record<string, Project[]> = {
       description: "A virtual reality experience guiding users through the solar system with stunning visuals, interactive learning, and immersive exploration.",
       details: "A virtual reality (VR) experience that takes users on an interactive tour of the solar system, offering breathtaking visuals and real-time planetary data. Developed with Unity and Unreal Engine, the project allows users to explore realistic 3D models of planets, moons, and space phenomena while learning about their characteristics. The immersive environment features smooth navigation, interactive learning panels, and engaging voice narration, making it perfect for astronomy enthusiasts, students, and educators. This VR experience blends education and entertainment, creating a captivating journey through space.",
       youtube: ["https://www.youtube.com/embed/BDJpSNRWB88?si=eAwMtvq15IbcjlAy"],
+      website: "https://mitoworld.io/world/w/3216/group3",
       keywords: ["Virtual Reality", "Unreal Engine", "Solar System Exploration", "Immersive Learning"],
       images: ["/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg", "/planet-gallery-vr.jpg"],
       role: "3D Modeler & VR Developer",
