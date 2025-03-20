@@ -175,12 +175,12 @@ const allProjectsData: Record<string, Project[]> = {
     { 
       id: 4, 
       title: "Personal Portfolio v1", 
-      image: "/Landing page.png", 
+      image: "/Landing_Page.png", 
       description: "A simple personal website showing projects, skills, and achievements with easy navigation, nice design, and mobile-friendly layout.",
       details: "A personal portfolio website showcasing my web development, UI/UX design, and multimedia projects. Built using HTML, CSS, and JavaScript, it features a clean and modern design, smooth navigation, and a responsive layout to ensure an optimal viewing experience on all devices. The site includes interactive project galleries, an about section, contact forms, and social media links to connect with recruiters and potential clients. It highlights my technical skills, creative approach, and professional achievements, serving as an online resume to attract job opportunities and freelance projects.",
       website: "https://ferdexzra.github.io/online-portfolio",
       keywords: ["Portfolio Website", "HTML", "CSS", "JavaScript", "UI/UX Design", "Frontend Development", "Personal Project"],
-      images: ["/Landing page.png", "/Landing page.png", "/Landing page.png"],
+      images: ["/Landing_Page.png", "/Landing_Page.png", "/Landing_Page.png"],
       role: "Full-stack Developer & UI/UX Designer",
       toolsUsed: [
         { name: "HTML", icon: <SiHtml5 className="text-orange-500" /> },
