@@ -128,7 +128,7 @@ const allProjectsData: Record<string, Project[]> = {
       details: "This is the third iteration of my personal portfolio, built using Next.js, Tailwind CSS, and Framer Motion. The goal was to create a responsive, visually appealing, and interactive portfolio to highlight my web development, UI/UX design, and multimedia projects. It features dynamic animations, project filtering, and a seamless user experience optimized for both desktop and mobile devices.",  
       website: "https://digital-portfolio-ariezaaziera.vercel.app/",  
       keywords: ["Personal Project", "Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Design", "Frontend Development", "Responsive Design"],  
-      images: ["/Personal_Portfolio_v3.png", "/Personal_Portfolio_v3.png", "/Personal_Portfolio_v3.png"],  
+      images: ["/Personal_Portfolio_v3.1.png", "/Personal_Portfolio_v3.png", "/Personal_Portfolio_v3.png"],  
       role: "Frontend Developer & UI/UX Designer",  
       toolsUsed: [  
         { name: "Next.js", icon: <SiNextdotjs className='text-white' /> },  
