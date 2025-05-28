@@ -47,11 +47,22 @@ export default function Navbar() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <a href={`#${item.toLowerCase()}`} onClick={() => setIsOpen(false)}>
+                  <a href={`/#${item.toLowerCase()}`} onClick={() => setIsOpen(false)}>
                     {item}
                   </a>
                 </motion.li>
               ))}
+
+              {/* GIFT Program link */}
+              <motion.li 
+                className="py-2"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a href="/gift-program" onClick={() => setIsOpen(false)}>
+                  GIFT Program
+                </a>
+              </motion.li>
             </motion.ul>
           )}
         </AnimatePresence>
@@ -66,7 +77,7 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
             >
             <motion.a 
-                href={`#${item.toLowerCase()}`} 
+                href={`/#${item.toLowerCase()}`} 
                 className="relative text-white"
                 whileHover={{ color: "#a855f7" }} // ✅ Changes text color on hover
                 transition={{ duration: 0.3 }}
@@ -82,6 +93,27 @@ export default function Navbar() {
             </motion.a>
             </motion.li>
         ))}
+
+            {/* GIFT Program link */}
+            <motion.li 
+              className="relative"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <motion.a 
+                href="/gift-program"
+                className="relative text-white"
+                whileHover={{ color: "#a855f7" }} 
+                transition={{ duration: 0.3 }}
+              >
+                GIFT Program
+                <motion.span 
+                  className="absolute left-0 bottom-0 w-full h-0.5 bg-purple-500 origin-left scale-x-0"
+                  whileHover={{ scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
+                ></motion.span>
+              </motion.a>
+            </motion.li>
         </ul>
 
       </div>
