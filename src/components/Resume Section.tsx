@@ -14,6 +14,18 @@ import {
 // ✅ Experiences Data
 const experiences = [
   {
+    role: "SV Softline (Supervisor – Softline Department)",
+    company: "Mydin Mohamed Holdings Berhad (MAB)",
+    duration: "May 2025 - Present",
+    logo: "/Mydin.png",
+    description: [
+      "Currently serving as a Supervisor for the Softline Department at Mydin MAB, overseeing staff management, merchandise arrangement, and daily operations within the department.",
+      "Responsible for monitoring stock levels, coordinating product replenishment, and ensuring visual merchandising standards are met.",
+      "Manage a team of staff across multiple sub-departments such as GMS, Apparel, and Muslimin sections, including task delegation and shift supervision.",
+      "Handle OT calculations, work scheduling, and staff performance assessments to maintain operational efficiency."
+    ]
+  },  
+  {
     role: "Global Initiative for Future Talent (GIFT) Program – Khazanah & PersolKelly",
     company: "Khazanah Nasional Berhad",
     duration: "Jan 2025 - Present",
