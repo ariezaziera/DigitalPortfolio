@@ -19,10 +19,8 @@ const experiences = [
     duration: "May 2025 - Present",
     logo: "/Mydin.png",
     description: [
-      "Currently serving as a Supervisor for the Softline Department at Mydin MAB, overseeing staff management, merchandise arrangement, and daily operations within the department.",
       "Responsible for monitoring stock levels, coordinating product replenishment, and ensuring visual merchandising standards are met.",
       "Manage a team of staff across multiple sub-departments such as GMS, Apparel, and Muslimin sections, including task delegation and shift supervision.",
-      "Handle OT calculations, work scheduling, and staff performance assessments to maintain operational efficiency."
     ]
   },  
   {
@@ -156,7 +154,7 @@ const ResumeSection = () => {
 
           {/* Main Button */}
           <a
-            href="/AriezaAziera_Resume.pdf"
+            href="/Resume_Arieza_Aziera.pdf"
             download="AriezaAziera_Resume.pdf"
             className="relative z-10 flex items-center gap-3 px-8 py-4 bg-purple-600 text-white font-semibold rounded-lg shadow-lg transition-all group-hover:bg-purple-700"
           >
