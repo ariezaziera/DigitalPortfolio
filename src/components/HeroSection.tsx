@@ -30,7 +30,7 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <h2 className="text-2xl md:text-3xl text-gray-300 mt-3">
-          Full Stack Developer
+          Web Developer/Editor
         </h2>
 
         {/* Description */}
