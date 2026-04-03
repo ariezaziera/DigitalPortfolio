@@ -190,7 +190,6 @@ const ResumeSection = () => {
                     {/* Glow belakang */}
                     <div className="absolute w-14 h-14 bg-white/80 blur-xl rounded-full"></div>
                     {/* Logo */}
-                    <div className="h-12 flex-shrink-0 flex items-center mb-5 md:mr-5">
                       <Image
                         src={exp.logo}
                         alt={`${exp.company} Logo`}
