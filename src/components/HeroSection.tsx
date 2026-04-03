@@ -78,7 +78,7 @@ const HeroSection = () => {
           <motion.div
             whileHover={{ scale: 1.1, rotate: 1 }}
             whileTap={{ scale: 0.95 }}
-            className="relative w-[300px] h-[300px] overflow-hidden"
+            className="relative w-[300px] h-[300px] overflow-hidden rounded-full"
           >
             <Image
               src="/profile8.png"
