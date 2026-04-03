@@ -35,7 +35,7 @@ const HeroSection = () => {
 
         {/* Description */}
         <p className="text-gray-400 max-w-xl mt-4">
-          I create simple and engaging visual content for digital platforms, including posters, photo editing, and video.
+          I create <span className="text-purple-400 font-semibold">visual content that brings ideas to life</span> for digital platforms, including posters, photo editing, and video.
         </p>
 
         {/* Buttons */}
