@@ -8,7 +8,7 @@ const AboutMe = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-              I&apos;m a <span className="text-purple-300">multimedia graduate</span> with a strong interest in visual content and digital media, with hands-on experience in poster design, photo editing, and basic video production.
+              I&apos;m a <span className="text-purple-300">multimedia graduate focused on visual content and digital media</span> with hands-on experience in poster design, photo editing, and basic video production.
               During my internship at 
               <span className="text-purple-300"> Prepaid Technologies Sdn Bhd</span>, I contributed to advertising visuals and supported content creation for online platforms.
           </p>
