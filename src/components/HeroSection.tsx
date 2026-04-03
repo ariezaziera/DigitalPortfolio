@@ -84,9 +84,6 @@ const HeroSection = () => {
               src="/profile8.png"
               alt="Profile Picture"
               fill
-              width={300}
-              height={300}
-              fill
               className="object-cover object-top shadow-lg"
               sizes="300px"
             />
