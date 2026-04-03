@@ -198,6 +198,7 @@ const ResumeSection = () => {
                           className="object-contain"
                           />
                       </div>
+                    </div>
                     
                     {/* Details */}
                     <div className="md:text-start">
