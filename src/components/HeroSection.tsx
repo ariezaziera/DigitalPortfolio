@@ -30,12 +30,12 @@ const HeroSection = () => {
 
         {/* Subtitle */}
         <h2 className="text-2xl md:text-3xl text-gray-300 mt-3">
-          Web Developer/Editor
+          Visual Content & Multimedia
         </h2>
 
         {/* Description */}
         <p className="text-gray-400 max-w-xl mt-4">
-          Passionate about building interactive and scalable web applications.
+          I create simple and engaging visual content for digital platforms, including posters, photo editing, and video.
         </p>
 
         {/* Buttons */}
