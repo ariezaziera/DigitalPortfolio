@@ -180,9 +180,7 @@ const ResumeSection = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   whileHover={{ scale: 1.02, boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.4)" }}
-                  className="relative p-6 rounded-2xl border border-white/25 bg-white/20
-                  backdrop-blur-md shadow-[0_0_25px_rgba(255,255,255,0.18)] transition-all duration-300
-                  hover:border-white/40 hover:shadow-[0_0_50px_rgba(255,255,255,0.18)]
+                  className="relative p-6 rounded-2xl bg-white/20 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_0_25px_rgba(255,255,255,0.1)] transition-all duration-300 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.12),0_0_45px_rgba(255,255,255,0.18)]
                   before:absolute before:inset-0 before:rounded-2xl before:border
                   before:border-white/10 before:pointer-events-none"
                 >
