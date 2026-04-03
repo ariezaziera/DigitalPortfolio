@@ -8,15 +8,14 @@ const AboutMe = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            I&apos;m a passionate <span className="text-purple-300">Multimedia & Full Stack Developer</span> with a strong foundation in design, development, and problem-solving. 
-            Currently completing my studies, I have gained valuable experience during my internship at 
-            <span className="text-purple-300"> Prepaid Technologies Sdn Bhd</span>, where I worked on various projects including order calculator automation and digital content creation.
+              I&apos;m a <span className="text-purple-300">multimedia graduate</span> with a strong interest in visual content and digital media, with hands-on experience in poster design, photo editing, and basic video production.
+              During my internship at 
+              <span className="text-purple-300"> Prepaid Technologies Sdn Bhd</span>, I contributed to advertising visuals and supported content creation for online platforms.
           </p>
-  
-          <p className="text-lg text-gray-300 leading-relaxed mt-4">
-            My skills include <span className="text-purple-300">teamwork, communication, and analytical thinking</span>. 
-            I am always eager to learn and grow, embracing new challenges in the world of technology.
-          </p>
+        <p className="text-lg text-gray-300 leading-relaxed mt-4">
+        </p>I also have a background in <span className="text-purple-300">web development</span>, which strengthens my problem-solving approach and understanding of digital platforms. 
+            I enjoy creating simple, engaging content and am eager to gain more hands-on experience in media, event coverage, and social content production.
+        </p>
         </div>
       </section>
     );
