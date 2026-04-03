@@ -254,7 +254,6 @@ const ResumeSection = () => {
                         className="object-contain rounded-md"
                       />
                     </div>
-                  </div>
 
                     {/* Details */}
                     <div className="md:text-start">
@@ -307,7 +306,7 @@ const ResumeSection = () => {
                             initial={{ width: "0%" }}
                             animate={{ width: `${skill.level}%` }}
                             transition={{ duration: 1.5, ease: "easeInOut" }}
-                            className="h-2 bg-white/10 rounded-full overflow-hidden
+                            className="h-2 bg-white/10 rounded-full overflow-hidden"
                             >
                             <div className="h-full bg-purple-500"></div>
                           </motion.div>
