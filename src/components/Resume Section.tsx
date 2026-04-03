@@ -215,9 +215,9 @@ const ResumeSection = () => {
                     </div>
                   </div>
                 </motion.div>
-      ))}
-  </div>
-</div>
+              ))}
+            </div>
+          </div>
 
           {/* 🟠 Vertical Divider for Desktop */}
           <div className="hidden md:block w-0.5 bg-gray-500 opacity-50"></div>
@@ -236,7 +236,7 @@ const ResumeSection = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   whileHover={{ scale: 1.02, boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.4)" }}
-                  className="relative bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700"
+                  className="relative p-6 rounded-2xl bg-white/18 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.10),0_0_18px_rgba(255,255,255,0.10),0_0_40px_rgba(255,255,255,0.16)] transition-all duration-300 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_0_24px_rgba(255,255,255,0.14),0_0_55px_rgba(255,255,255,0.24)]"
                 >
                   {/* Timeline Dot */}
                   <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
@@ -244,7 +244,8 @@ const ResumeSection = () => {
                   {/* 🟢 Mobile-Friendly Layout */}
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     {/* Logo */}
-                    <div className="h-12 flex-shrink-0 flex items-center mb-5 md:mr-5">
+                    <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
+                      <div className="absolute w-16 h-16 bg-white/70 blur-xl rounded-full"></div>
                       <Image
                         src={edu.logo}
                         alt={`${edu.institution} Logo`}
@@ -253,6 +254,7 @@ const ResumeSection = () => {
                         className="object-contain rounded-md"
                       />
                     </div>
+                  </div>
 
                     {/* Details */}
                     <div className="md:text-start">
@@ -293,9 +295,9 @@ const ResumeSection = () => {
                     {skills.map((skill, skillIndex) => (
                       <motion.div
                         key={skillIndex}
-                        whileHover={{ scale: 1.1, rotate: 2, boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.4)" }}
-                        className="flex flex-col items-center text-white text-xs sm:text-sm font-semibold bg-gray-800 p-3 sm:p-4 rounded-lg shadow-lg w-32 sm:w-40"
-                      >
+                        whileHover={{ scale: 1.08, rotate: 1, boxShadow: "0px 0px 18px rgba(168, 85, 247, 0.22)" }}
+                        className="flex flex-col items-center text-white text-xs sm:text-sm font-semibold p-3 sm:p-4 rounded-2xl bg-white/12 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_0_18px_rgba(255,255,255,0.08)] w-32 sm:w-40 transition-all duration-300"
+                        >
                         <motion.div className="text-3xl">{skill.icon}</motion.div>
                         <span className="mt-2">{skill.name}</span>
 
@@ -305,8 +307,8 @@ const ResumeSection = () => {
                             initial={{ width: "0%" }}
                             animate={{ width: `${skill.level}%` }}
                             transition={{ duration: 1.5, ease: "easeInOut" }}
-                            className="h-2 bg-gray-700 rounded-full overflow-hidden"
-                          >
+                            className="h-2 bg-white/10 rounded-full overflow-hidden
+                            >
                             <div className="h-full bg-purple-500"></div>
                           </motion.div>
                           <p className="text-xs text-gray-400 mt-1">
