@@ -267,6 +267,7 @@ const ResumeSection = () => {
               ))}
             </div>
           </div>
+        </div>
 
         {/* 🔹 Skills Section */}
         <motion.section 
