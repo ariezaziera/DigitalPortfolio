@@ -180,7 +180,7 @@ const ResumeSection = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   whileHover={{ scale: 1.02, boxShadow: "0px 0px 10px rgba(255, 255, 255, 0.4)" }}
-                  className="relative p-6 rounded-2xl bg-white/18 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.10),0_0_16px_rgba(255,255,255,0.08),0_0_38px_rgba(168,85,247,0.18)] transition-all duration-300 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.18),0_0_24px_rgba(255,255,255,0.12),0_0_55px_rgba(168,85,247,0.28)]"
+                  className="relative p-6 rounded-2xl bg-white/18 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.10),0_0_18px_rgba(255,255,255,0.10),0_0_40px_rgba(255,255,255,0.16)] transition-all duration-300 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_0_24px_rgba(255,255,255,0.14),0_0_55px_rgba(255,255,255,0.24)]"
                 >
                   {/* Timeline Dot */}
                   <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
