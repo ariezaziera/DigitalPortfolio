@@ -189,7 +189,7 @@ const ResumeSection = () => {
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
                       {/* Glow belakang */}
-                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/10 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
+                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
                         <Image
                           src={exp.logo}
                           alt={`${exp.company} Logo`}
