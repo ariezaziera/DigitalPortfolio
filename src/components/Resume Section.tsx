@@ -261,10 +261,6 @@ const ResumeSection = () => {
                       <h4 className="text-lg text-start font-bold text-white flex items-center gap-2">{edu.degree}</h4>
                       <p className="text-gray-400 text-start">{edu.institution}</p>
                       <p className="text-gray-500 text-sm flex items-center gap-2">{edu.duration}</p>
-                    </p>
-                      <p className="mt-3 text-gray-400 text-start text-sm leading-relaxed">
-                        {Array.isArray(exp.description) ? exp.description.join(" ") : exp.description}
-                      </p>
                     </div>
                   </div>
                 </motion.div>
