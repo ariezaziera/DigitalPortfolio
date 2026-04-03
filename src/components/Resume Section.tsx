@@ -186,33 +186,36 @@ const ResumeSection = () => {
                   <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                   {/* 🟢 Mobile-Friendly Layout */}
-<div className="flex flex-col md:flex-row md:items-center gap-2">
-  <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
-    {/* Glow belakang */}
-    <div className="absolute w-16 h-16 bg-white/70 blur-xl rounded-full"></div>
-
-    {/* Logo */}
-    <Image
-      src={exp.logo}
-      alt={`${exp.company} Logo`}
-      width={40}
-      height={40}
-      className="relative object-contain"
-    />
-  </div>
-
-  {/* Details */}
-  <div className="md:text-start">
-    <h4 className="text-lg font-bold text-white flex items-center gap-2 text-left">
-      {exp.role} <FaUserTie className="text-gray-400" />
-    </h4>
-    <p className="text-gray-400 text-start">{exp.company}</p>
-    <p className="text-gray-500 text-sm flex items-center gap-2">
-      <FaCalendarAlt className="text-gray-400" /> {exp.duration}
-    </p>
-    <p className="mt-3 text-gray-400 text-start text-sm leading-relaxed">
-      {Array.isArray(exp.description) ? exp.description.join(" ") : exp.description}
-    </p>
+                  <div className="flex flex-col md:flex-row md:items-center gap-2">
+                    <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
+                      {/* Glow belakang */}
+                      <div className="absolute w-16 h-16 bg-white/70 blur-xl rounded-full"></div>
+                      {/* Logo */}
+                      <Image
+                        src={exp.logo}
+                        alt={`${exp.company} Logo`}
+                        width={40}
+                        height={40}
+                        className="relative object-contain"
+                        />
+                    </div>
+                    
+                    {/* Details */}
+                    <div className="md:text-start">
+                      <h4 className="text-lg font-bold text-white flex items-center gap-2 text-left">
+                        {exp.role} <FaUserTie className="text-gray-400" />
+                      </h4>
+                      <p className="text-gray-400 text-start">{exp.company}</p>
+                      <p className="text-gray-500 text-sm flex items-center gap-2">
+                        <FaCalendarAlt className="text-gray-400" /> {exp.duration}
+                      </p>
+                      <p className="mt-3 text-gray-400 text-start text-sm leading-relaxed">
+                        {Array.isArray(exp.description) ? exp.description.join(" ") : exp.description}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+      ))}
   </div>
 </div>
 
