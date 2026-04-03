@@ -81,7 +81,7 @@ const HeroSection = () => {
             className="relative w-[300px] h-[300px] overflow-hidden rounded-full"
           >
             <Image
-              src="/profile8.png"
+              src="/profile1.png"
               alt="Profile Picture"
               fill
               className="object-cover object-top shadow-lg"
