@@ -13,7 +13,7 @@ const AboutMe = () => {
               <span className="text-purple-300"> Prepaid Technologies Sdn Bhd</span>, I contributed to advertising visuals and supported content creation for online platforms.
           </p>
         <p className="text-lg text-gray-300 leading-relaxed mt-4">
-        </p>I also have a background in <span className="text-purple-300">web development</span>, which strengthens my problem-solving approach and understanding of digital platforms. 
+            I also have a background in <span className="text-purple-300">web development</span>, which strengthens my problem-solving approach and understanding of digital platforms. 
             I enjoy creating simple, engaging content and am eager to gain more hands-on experience in media, event coverage, and social content production.
         </p>
         </div>
