@@ -88,6 +88,7 @@ const HeroSection = () => {
               height={300}
               fill
               className="object-cover object-top shadow-lg"
+              sizes="300px"
             />
           </motion.div>
         </motion.div>
