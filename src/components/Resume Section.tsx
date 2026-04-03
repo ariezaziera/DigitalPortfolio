@@ -186,18 +186,18 @@ const ResumeSection = () => {
                   <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                   {/* 🟢 Mobile-Friendly Layout */}
-                  <div className="relative h-12 w-12 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
+                  <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
                     {/* Glow belakang */}
-                    <div className="absolute w-14 h-14 bg-white/80 blur-xl rounded-full"></div>
+                    <div className="absolute w-16 h-16 bg-white/70 blur-xl rounded-full"></div>
                     {/* Logo */}
-                      <Image
-                        src={exp.logo}
-                        alt={`${exp.company} Logo`}
-                        width={64}
-                        height={64}
-                        className="relative object-contain rounded-md"
+                    <Image
+                      src={exp.logo}
+                      alt={`${exp.company} Logo`}
+                      width={40}
+                      height={40}
+                      className="relative object-contain"
                       />
-                    </div>
+                  </div>
 
                     {/* Details */}
                     <div className="md:text-start">
