@@ -245,14 +245,15 @@ const ResumeSection = () => {
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     {/* Logo */}
                     <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
-                      <div className="absolute w-16 h-16 bg-white/70 blur-xl rounded-full"></div>
-                      <Image
-                        src={edu.logo}
-                        alt={`${edu.institution} Logo`}
-                        width={64}
-                        height={64}
-                        className="object-contain rounded-md"
-                      />
+                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
+                        <Image
+                          src={edu.logo}
+                          alt={`${edu.institution} Logo`}
+                          width={64}
+                          height={64}
+                          className="object-contain"
+                          />
+                      </div>
                     </div>
 
                     {/* Details */}
@@ -260,6 +261,10 @@ const ResumeSection = () => {
                       <h4 className="text-lg text-start font-bold text-white flex items-center gap-2">{edu.degree}</h4>
                       <p className="text-gray-400 text-start">{edu.institution}</p>
                       <p className="text-gray-500 text-sm flex items-center gap-2">{edu.duration}</p>
+                    </p>
+                      <p className="mt-3 text-gray-400 text-start text-sm leading-relaxed">
+                        {Array.isArray(exp.description) ? exp.description.join(" ") : exp.description}
+                      </p>
                     </div>
                   </div>
                 </motion.div>
