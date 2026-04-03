@@ -83,9 +83,11 @@ const HeroSection = () => {
             <Image
               src="/profile8.png"
               alt="Profile Picture"
+              fill
               width={300}
               height={300}
-              className="object-cover rounded-full shadow-lg"
+              fill
+              className="object-cover object-top shadow-lg"
             />
           </motion.div>
         </motion.div>
