@@ -202,9 +202,6 @@ const ResumeSection = () => {
                     
                     {/* Details */}
                     <div className="md:text-start">
-                      <h4 className="text-lg font-bold text-white flex items-center gap-2 text-left">
-                        {exp.role} <FaUserTie className="text-gray-400" />
-                      </h4>
                       <p className="text-gray-400 text-start">{exp.company}</p>
                       <p className="text-gray-500 text-sm flex items-center gap-2">
                         <FaCalendarAlt className="text-gray-400" /> {exp.duration}
