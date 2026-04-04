@@ -34,7 +34,7 @@ const experiences = [
     role: "Multimedia cum Administrative (Internship)",
     company: "Prepaid Technologies Sdn Bhd",
     duration: "Oct 2024 - Mar 2025",
-    logo: "/Esystem10.png",
+    logo: "/Esystem3.png",
     description: ["Developed an Order Calculator Web App, integrating Firebase and JavaScript to automate dealer order processing, improving accuracy and reducing errors by 70%."]
   },
   {
