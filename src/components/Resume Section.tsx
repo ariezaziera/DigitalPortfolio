@@ -193,8 +193,8 @@ const ResumeSection = () => {
                         <Image
                           src={exp.logo}
                           alt={`${exp.company} Logo`}
-                          width={64}
-                          height={64}
+                          width={60}
+                          height={60}
                           className="object-contain brightness-110 contrast-125"
                           />
                       </div>
@@ -246,9 +246,9 @@ const ResumeSection = () => {
                         <Image
                           src={edu.logo}
                           alt={`${edu.institution} Logo`}
-                          width={64}
-                          height={64}
-                          className="object-contain"
+                          width={60}
+                          height={60}
+                          className="object-contain brightness-110 contrast-125"
                           />
                       </div>
                     </div>
@@ -257,7 +257,9 @@ const ResumeSection = () => {
                     <div className="md:text-start">
                       <h4 className="text-lg text-start font-bold text-white flex items-center gap-2">{edu.degree}</h4>
                       <p className="text-gray-400 text-start">{edu.institution}</p>
-                      <p className="text-gray-500 text-sm flex items-center gap-2">{edu.duration}</p>
+                      <p className="text-gray-500 text-sm flex items-center gap-2">
+                        <FaCalendarAlt className="text-gray-400" /> {edu.duration}
+                      </p>
                     </div>
                   </div>
                 </motion.div>
