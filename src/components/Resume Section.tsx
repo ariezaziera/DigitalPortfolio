@@ -239,9 +239,9 @@ const ResumeSection = () => {
                   <div className="absolute -left-7 top-6 w-4 h-4 bg-purple-500 rounded-full border-2 border-gray-900"></div>
 
                   {/* 🟢 Mobile-Friendly Layout */}
-                  <div className="flex flex-col md:flex-row md:items-center gap-2">
+                  <div className="flex flex-col md:flex-row md:items-start gap-2">
                     {/* Logo */}
-                    <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5 md:ml-5">
+                    <div className="relative h-14 w-14 self-start flex-shrink-0 flex items-center justify-center mb-5 md:mb-0 md:mr-5 md:ml-5">
                       <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/28 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
                         <Image
                           src={edu.logo}
