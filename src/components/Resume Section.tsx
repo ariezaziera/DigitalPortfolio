@@ -189,7 +189,7 @@ const ResumeSection = () => {
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5 md:ml-3">
                       {/* Glow belakang */}
-                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
+                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/28 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
                         <Image
                           src={exp.logo}
                           alt={`${exp.company} Logo`}
@@ -241,8 +241,8 @@ const ResumeSection = () => {
                   {/* 🟢 Mobile-Friendly Layout */}
                   <div className="flex flex-col md:flex-row md:items-center gap-2">
                     {/* Logo */}
-                    <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5">
-                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/20 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
+                    <div className="relative h-14 w-14 flex-shrink-0 flex items-center justify-center mb-5 md:mr-5 md:ml-5">
+                      <div className="h-16 w-16 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/28 shadow-[0_0_20px_rgba(255,255,255,0.08)] md:mr-4">
                         <Image
                           src={edu.logo}
                           alt={`${edu.institution} Logo`}
