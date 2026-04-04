@@ -193,8 +193,8 @@ const ResumeSection = () => {
                         <Image
                           src={exp.logo}
                           alt={`${exp.company} Logo`}
-                          width={50}
-                          height={50}
+                          width={64}
+                          height={64}
                           className="object-contain brightness-110 contrast-125"
                           />
                       </div>
