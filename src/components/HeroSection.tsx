@@ -29,7 +29,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <h2 className="text-2xl md:text-3xl text-gray-300 mt-5">
+        <h2 className="text-xl md:text-3xl text-gray-300 mt-5">
           Frontend Developer (Next.js)
         </h2>
 
