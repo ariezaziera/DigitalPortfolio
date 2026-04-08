@@ -29,12 +29,12 @@ const HeroSection = () => {
         </h1>
 
         {/* Subtitle */}
-        <h2 className="text-2xl md:text-3xl text-gray-300 mt-3">
+        <h2 className="text-2xl md:text-3xl text-gray-300 mt-5">
           Frontend Developer (Next.js)
         </h2>
 
         {/* Description */}
-        <p className="text-gray-400 max-w-xl mt-4">
+        <p className="text-gray-400 max-w-xl mt-5">
           I build <span className="text-purple-400 font-semibold"> responsive and functional web applications </span> 
           with clean UI and smooth user experience, supported by a <span className="text-purple-400 font-semibold">
             strong background in visual content and multimedia. </span>
