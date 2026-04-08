@@ -8,14 +8,22 @@ const AboutMe = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-10">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-              I&apos;m a <span className="text-purple-300">multimedia graduate focused on visual content and digital media</span> with hands-on experience in poster design, photo editing, and basic video production.
-              During my internship at 
-              <span className="text-purple-300"> Prepaid Technologies Sdn Bhd</span>, I contributed to advertising visuals and supported content creation for online platforms.
+              I’m a <span className="text-purple-300">Frontend Developer</span> with experience in building web applications using 
+              <span className="text-purple-300"> Next.js, React, and Tailwind CSS</span>. I focus on creating responsive, user-friendly interfaces and developing functional systems that solve real-world problems.
           </p>
-        <p className="text-lg text-gray-300 leading-relaxed mt-4">
-            I also have a background in <span className="text-purple-300">web development</span>, which strengthens my problem-solving approach and understanding of digital platforms. 
-            I enjoy creating simple, engaging content and am eager to gain more hands-on experience in media, event coverage, and social content production.
-        </p>
+            
+            <p className="text-lg text-gray-300 leading-relaxed mt-4">
+                I have hands-on experience working with fullstack technologies, including 
+                <span className="text-purple-300"> Node.js and MongoDB</span>, allowing me to understand how frontend applications integrate with backend systems and data.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed mt-4">
+                With a background in <span className="text-purple-300">multimedia and visual content</span>, I bring strong design awareness into my development work, ensuring that applications are not only functional but also visually engaging and user-focused.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed mt-4">
+                I am actively seeking opportunities to contribute as a frontend developer, where I can apply my skills to build meaningful products and continue growing in a real-world environment.
+            </p>
         </div>
       </section>
     );
