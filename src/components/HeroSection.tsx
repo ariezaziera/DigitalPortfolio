@@ -1,4 +1,4 @@
-"use client";
+w"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -35,8 +35,8 @@ const HeroSection = () => {
 
         {/* Description */}
         <p className="text-gray-400 max-w-xl mt-5">
-          I build <span className="text-purple-400 font-semibold"> responsive and functional web applications </span> 
-          with clean UI and smooth user experience, supported by a <span className="text-purple-400 font-semibold">
+          I build <span className="text-purple-400 font-semibold"> responsive and functional web applications using Next.js </span> 
+          focusing on usability, performance, and clean user experience, supported by a <span className="text-purple-400 font-semibold">
             strong background in visual content and multimedia. </span>
         </p>
 
