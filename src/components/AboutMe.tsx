@@ -6,7 +6,7 @@ const AboutMe = () => {
     return (
       <section id="about" className="py-20 px-6 md:px-12 lg:px-32 text-white" style={{ backgroundColor: "rgba(14, 13, 14, 1)" }}>
         <div className="max-w-3xl mx-auto text-left md:text-center">
-          <h2 className="text-4xl font-bold mb-10">About Me</h2>
+          <h2 className="text-4xl font-bold mb-10 text-center">About Me</h2>
           <p className="text-base md:text-lg text-gray-300 leading-relaxed">
               I’m a <span className="text-purple-300">Frontend Developer</span> with experience in building web applications using 
               <span className="text-purple-300"> Next.js, React, and Tailwind CSS</span>. I focus on creating responsive, user-friendly interfaces and developing functional systems that solve real-world problems.
